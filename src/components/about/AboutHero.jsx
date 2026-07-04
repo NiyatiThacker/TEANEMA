@@ -30,36 +30,41 @@ export default function AboutHero() {
   const words = "Marketing That Earns Attention, Not Just Impressions.".split(" ");
 
   return (
-    <section className="relative h-[100dvh] md:h-[85vh] min-h-[500px] md:min-h-[650px] w-full overflow-hidden bg-black flex items-center justify-center pt-24 pb-16">
-      {/* Video Background (Retained as requested) */}
-      {isMounted && (
-        <video 
-          ref={videoRef}
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          className="absolute inset-0 w-full h-full object-contain md:object-cover md:scale-[1.15] z-0 opacity-80"
-        >
-          <source src="/about_bg2.mp4" type="video/mp4" />
-        </video>
-      )}
+    <section className="relative w-full min-h-[100dvh] md:h-[85vh] md:min-h-[650px] overflow-hidden bg-black flex flex-col md:block pt-[70px] md:pt-24 pb-12 md:pb-16">
       
-      {/* Soft overlay to ensure readability */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] z-0" />
+      {/* Video Container: inline on mobile, absolute background on desktop */}
+      <div className="relative w-full aspect-video md:absolute md:inset-0 md:h-full md:w-full z-0">
+        {isMounted && (
+          <video 
+            ref={videoRef}
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover md:scale-[1.15] opacity-100 md:opacity-80"
+          >
+            <source src="/about_bg2.mp4" type="video/mp4" />
+          </video>
+        )}
+        {/* Soft overlay only on desktop */}
+        <div className="hidden md:block absolute inset-0 bg-black/60 backdrop-blur-[2px] z-0" />
+      </div>
+      
 
-      {/* Floating Parallax Icons */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
+
+      {/* Floating Parallax Icons (Hidden on mobile for cleaner look) */}
+      <div className="hidden md:block absolute inset-0 overflow-hidden pointer-events-none z-10">
         <VscSearch className="absolute top-[20%] left-[10%] text-white/10 w-16 h-16 animate-pulse" style={{ animationDuration: '4s' }} />
         <VscMegaphone className="absolute bottom-[20%] left-[20%] text-white/10 w-20 h-20 animate-bounce" style={{ animationDuration: '6s' }} />
         <VscCode className="absolute top-[30%] right-[15%] text-white/10 w-24 h-24 animate-pulse" style={{ animationDuration: '5s' }} />
         <VscHeart className="absolute bottom-[30%] right-[10%] text-white/10 w-12 h-12 animate-bounce" style={{ animationDuration: '7s' }} />
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 md:px-12 relative z-20 text-center flex flex-col items-center">
+      {/* Content Container */}
+      <div className="relative flex-1 flex flex-col items-center justify-center px-6 mt-8 md:mt-0 md:absolute md:inset-0 z-20 text-center md:max-w-4xl md:mx-auto">
         
         {/* Animated Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-white leading-[1.1] mb-6 flex flex-wrap justify-center gap-x-3 gap-y-2">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-white leading-[1.2] md:leading-[1.1] mb-5 md:mb-6 flex flex-wrap justify-center gap-x-2 md:gap-x-3 gap-y-1 md:gap-y-2">
           {words.map((word, i) => (
             <span
               key={i}
@@ -79,7 +84,7 @@ export default function AboutHero() {
 
         {/* Supporting Line */}
         <p 
-          className={`text-lg md:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl mb-8 transition-all duration-1000 delay-[800ms] transform ${
+          className={`text-base md:text-xl text-slate-300 font-medium leading-relaxed max-w-2xl mb-6 md:mb-8 transition-all duration-1000 delay-[800ms] transform ${
             isMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -88,7 +93,7 @@ export default function AboutHero() {
 
         {/* Service Line */}
         <p 
-          className={`text-sm md:text-base text-slate-400 font-semibold tracking-wide mb-10 transition-all duration-1000 delay-[1000ms] transform ${
+          className={`text-[13px] md:text-base text-slate-400 font-semibold tracking-wide mb-8 md:mb-10 transition-all duration-1000 delay-[1000ms] transform ${
             isMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
@@ -104,7 +109,7 @@ export default function AboutHero() {
           <a
             href="#about-cta"
             onClick={handleScrollToCTA}
-            className="group relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#F27224] text-white font-bold text-lg hover:-translate-y-1 transition-all duration-300 shadow-[0_0_20px_rgba(242,114,36,0.3)] hover:shadow-[0_0_30px_rgba(242,114,36,0.6)] overflow-hidden"
+            className="group relative inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 rounded-full bg-[#F27224] text-white font-bold text-base md:text-lg hover:-translate-y-1 transition-all duration-300 shadow-[0_0_20px_rgba(242,114,36,0.3)] hover:shadow-[0_0_30px_rgba(242,114,36,0.6)] overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
               Let's Build Something Great
