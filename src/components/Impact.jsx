@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import ScrollStack, { ScrollStackItem } from "./ScrollStack";
 
 function CountUp({ end, duration = 1800, suffix = "", prefix = "", decimals = 0 }) {
   const [count, setCount] = useState(0);
@@ -126,34 +127,70 @@ export default function Impact() {
             </p>
           </div>
 
-          {/* Right Side - Massive Scrolling Metrics */}
-          <div className="lg:col-span-7 flex flex-col gap-32 md:gap-48 pt-10 lg:pt-20 pb-20">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.id}
-                className={`flex flex-col reveal reveal-delay-${(index % 3) + 1}`}
-              >
-                {/* Animated Massive Stat Value */}
-                <div className={`text-7xl md:text-8xl lg:text-9xl font-black font-display tracking-tighter leading-none mb-4 md:mb-6 ${stat.colorClass}`}>
-                  <CountUp
-                    end={stat.end}
-                    decimals={stat.decimals || 0}
-                    prefix={stat.prefix || ""}
-                    suffix={stat.suffix || ""}
-                  />
-                </div>
+          {/* Right Side - Scrolling Metrics Stack */}
+          <div className="lg:col-span-7 flex flex-col relative h-[600px] w-full mt-10 lg:mt-0">
+            <style>{`
+              .impact-scroll-stack .scroll-stack-inner {
+                padding: 1rem 0 !important;
+                min-height: 100% !important;
+              }
+              .impact-scroll-stack .scroll-stack-card {
+                height: 400px !important;
+                padding: 1rem !important;
+                border-radius: 2rem !important;
+                margin-top: 0 !important;
+                background: rgba(248, 250, 252, 0.8) !important;
+                backdrop-filter: blur(8px) !important;
+                border: 1px solid rgba(0,0,0,0.02) !important;
+                box-shadow: none !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+              .impact-scroll-stack::-webkit-scrollbar {
+                display: none;
+              }
+              .impact-scroll-stack {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+              }
+            `}</style>
+            
+            <ScrollStack
+              useWindowScroll={false}
+              itemDistance={40}
+              itemScale={0.05}
+              itemStackDistance={20}
+              stackPosition="5%"
+              scaleEndPosition="2%"
+              baseScale={0.85}
+              blurAmount={1.5}
+              className="impact-scroll-stack h-full w-full"
+            >
+              {stats.map((stat, index) => (
+                <ScrollStackItem key={stat.id}>
+                  {/* Animated Massive Stat Value */}
+                  <div className={`text-7xl md:text-8xl lg:text-9xl font-black font-display tracking-tighter leading-none mb-4 md:mb-6 ${stat.colorClass}`}>
+                    <CountUp
+                      end={stat.end}
+                      decimals={stat.decimals || 0}
+                      prefix={stat.prefix || ""}
+                      suffix={stat.suffix || ""}
+                    />
+                  </div>
 
-                {/* Stat Label */}
-                <h3 className="text-3xl md:text-4xl font-bold text-slate-900 font-display mb-3 md:mb-4">
-                  {stat.label}
-                </h3>
+                  {/* Stat Label */}
+                  <h3 className="text-3xl md:text-4xl font-bold text-slate-900 font-display mb-3 md:mb-4">
+                    {stat.label}
+                  </h3>
 
-                {/* Stat Desc */}
-                <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-lg leading-relaxed">
-                  {stat.desc}
-                </p>
-              </div>
-            ))}
+                  {/* Stat Desc */}
+                  <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-lg leading-relaxed">
+                    {stat.desc}
+                  </p>
+                </ScrollStackItem>
+              ))}
+            </ScrollStack>
           </div>
 
         </div>
