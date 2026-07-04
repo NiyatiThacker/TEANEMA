@@ -22,13 +22,22 @@ export default function Hero() {
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isFirstVisit, setIsFirstVisit] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    // Fallback just in case video takes too long or event doesn't fire
-    const timer = setTimeout(() => {
+    setIsMounted(true);
+    if (sessionStorage.getItem('hasSeenPreloader')) {
+      setIsFirstVisit(false);
       setIsVideoLoaded(true);
-    }, 3000);
-    return () => clearTimeout(timer);
+    } else {
+      sessionStorage.setItem('hasSeenPreloader', 'true');
+      // Fallback just in case video takes too long or event doesn't fire
+      const timer = setTimeout(() => {
+        setIsVideoLoaded(true);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   useEffect(() => {
@@ -56,23 +65,25 @@ export default function Hero() {
   return (
     <>
       {/* Preloader */}
-      <div 
-        className={`fixed inset-0 z-[9999] bg-[#060810] flex flex-col items-center justify-center transition-opacity duration-1000 ease-in-out ${
-          isVideoLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'
-        }`}
-      >
-        <TeanemaLogo className="h-10 w-auto mb-6 opacity-80" showBeam={false} animated={true} walk="loop" />
-        <div className="w-48 h-1 bg-white/10 rounded-full overflow-hidden">
-          <div className="h-full bg-[#F27224] animate-[loading-bar_1.5s_ease-in-out_infinite]" />
+      {isMounted && isFirstVisit && (
+        <div 
+          className={`fixed inset-0 z-[9999] bg-[#060810] flex flex-col items-center justify-center transition-opacity duration-1000 ease-in-out ${
+            isVideoLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'
+          }`}
+        >
+          <TeanemaLogo className="h-10 w-auto mb-6 opacity-80" showBeam={false} animated={true} walk="loop" />
+          <div className="w-48 h-1 bg-white/10 rounded-full overflow-hidden">
+            <div className="h-full bg-[#F27224] animate-[loading-bar_1.5s_ease-in-out_infinite]" />
+          </div>
+          <style>{`
+            @keyframes loading-bar {
+              0% { width: 0%; transform: translateX(-100%); }
+              50% { width: 70%; transform: translateX(30%); }
+              100% { width: 100%; transform: translateX(100%); }
+            }
+          `}</style>
         </div>
-        <style>{`
-          @keyframes loading-bar {
-            0% { width: 0%; transform: translateX(-100%); }
-            50% { width: 70%; transform: translateX(30%); }
-            100% { width: 100%; transform: translateX(100%); }
-          }
-        `}</style>
-      </div>
+      )}
 
       {/* 1. Full-screen Video Hero */}
       <section className="relative w-full min-h-[100dvh] flex flex-col md:block overflow-hidden bg-[#060810] pt-[70px] md:pt-0">
