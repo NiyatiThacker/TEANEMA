@@ -75,10 +75,10 @@ export default function Hero() {
       </div>
 
       {/* 1. Full-screen Video Hero */}
-      <section className="relative w-full min-h-[100dvh] flex flex-col md:block overflow-hidden bg-black pt-[70px] md:pt-0">
+      <section className="relative w-full min-h-[100dvh] flex flex-col md:block overflow-hidden bg-[#060810] pt-[70px] md:pt-0">
 
         {/* Video Container */}
-        <div className="relative w-full aspect-video md:absolute md:inset-0 md:h-full md:w-full z-0 flex items-center justify-center bg-black">
+        <div className="relative w-full aspect-video md:absolute md:inset-0 md:h-full md:w-full z-0 flex items-center justify-center bg-[#060810]">
           <video
             ref={videoRef1}
             src="/DIGI.mp4"
@@ -94,18 +94,18 @@ export default function Hero() {
         </div>
 
         {/* Mobile Velocity-Style Text Block */}
-        <div className="md:hidden flex-1 relative z-10 flex flex-col items-start justify-center px-8 w-full bg-black mt-4">
-          <h2 className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-white mb-2">
+        <div className="md:hidden flex-1 relative z-10 flex flex-col items-start justify-center px-8 w-full bg-[#060810] py-8">
+          <h2 className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-slate-400 mb-2">
             Dare to be different?
           </h2>
-          <h1 className="text-4xl font-extrabold font-display tracking-tight text-[#E62B1E] mb-8">
+          <h1 className="text-4xl font-extrabold font-display tracking-tight text-[#F27224] mb-8">
             MEET TEANEMA
           </h1>
           
           <h3 className="text-[22px] font-bold text-white mb-1 leading-tight">
             A 360° Result-Oriented
           </h3>
-          <h3 className="text-[22px] font-bold text-slate-500 mb-8 leading-tight">
+          <h3 className="text-[22px] font-bold text-[#0062BE] mb-8 leading-tight">
             Digital Marketing Agency
           </h3>
           
@@ -116,7 +116,7 @@ export default function Hero() {
           <a
             href="#intro-content"
             onClick={(e) => handleScrollTo(e, "#intro-content")}
-            className="px-7 py-3.5 rounded-full bg-white text-black font-bold text-sm hover:bg-slate-200 transition-colors"
+            className="px-8 py-3.5 rounded-full bg-gradient-to-r from-[#F27224] to-[#0062BE] text-white font-bold text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
           >
             More About Us
           </a>
