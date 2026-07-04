@@ -134,6 +134,48 @@ export default function Navbar() {
         boxShadow: "0 8px 32px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 1)",
       }}
     >
+      <style>{`
+        .nav-glass-link {
+          position: relative;
+          overflow: hidden;
+        }
+        .nav-glass-link::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-radius: inherit;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-top: 1px solid rgba(255, 255, 255, 0.9);
+          box-shadow: inset 0 2px 4px rgba(255,255,255,0.8), 0 4px 16px rgba(0,0,0,0.06);
+          opacity: 0;
+          transform: scale(0.9);
+          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          z-index: -1;
+        }
+        .nav-glass-link::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -150%;
+          width: 50%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.95), transparent);
+          transform: skewX(-25deg);
+          transition: none;
+          z-index: -1;
+        }
+        .nav-glass-link:hover::before {
+          opacity: 1;
+          transform: scale(1);
+        }
+        .nav-glass-link:hover::after {
+          left: 150%;
+          transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+      `}</style>
       <div className="w-full flex items-center justify-between relative">
 
         {/* Logo */}
@@ -171,34 +213,14 @@ export default function Navbar() {
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href, true)}
                     className={`text-[13px] font-semibold tracking-wide transition-all duration-300 relative py-2.5 px-6 rounded-full flex flex-col items-center justify-center min-w-[80px] focus:outline-none ${
-                      isActive ? "text-brand-blue" : "text-slate-500 hover:text-slate-900"
+                      isActive ? "text-brand-blue" : "text-slate-500 hover:text-slate-900 nav-glass-link"
                     }`}
-                    style={{
-                      background: isActive ? "rgba(0, 98, 190, 0.08)" : "transparent",
-                      border: isActive ? "1px solid rgba(0, 98, 190, 0.15)" : "1px solid transparent",
-                      borderTop: isActive ? "1px solid rgba(0, 98, 190, 0.25)" : "1px solid transparent",
-                      boxShadow: isActive ? "inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 2px 8px rgba(0,0,0,0.03)" : "none"
-                    }}
-                    onMouseEnter={(e) => {
-                      if (!isActive) {
-                        e.currentTarget.style.background = "rgba(255, 255, 255, 0.65)";
-                        e.currentTarget.style.backdropFilter = "blur(12px)";
-                        e.currentTarget.style.WebkitBackdropFilter = "blur(12px)";
-                        e.currentTarget.style.border = "1px solid rgba(255, 255, 255, 0.5)";
-                        e.currentTarget.style.borderTop = "1px solid rgba(255, 255, 255, 0.9)";
-                        e.currentTarget.style.boxShadow = "inset 0 1px 2px rgba(255, 255, 255, 0.9), 0 4px 12px rgba(0, 0, 0, 0.04)";
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!isActive) {
-                        e.currentTarget.style.background = "transparent";
-                        e.currentTarget.style.backdropFilter = "none";
-                        e.currentTarget.style.WebkitBackdropFilter = "none";
-                        e.currentTarget.style.border = "1px solid transparent";
-                        e.currentTarget.style.borderTop = "1px solid transparent";
-                        e.currentTarget.style.boxShadow = "none";
-                      }
-                    }}
+                    style={isActive ? {
+                      background: "rgba(0, 98, 190, 0.08)",
+                      border: "1px solid rgba(0, 98, 190, 0.15)",
+                      borderTop: "1px solid rgba(0, 98, 190, 0.25)",
+                      boxShadow: "inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 2px 8px rgba(0,0,0,0.03)"
+                    } : {}}
                   >
                     {link.icon}
                     <div className="flex items-center gap-1">
@@ -254,34 +276,14 @@ export default function Navbar() {
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`text-[13px] font-semibold tracking-wide transition-all duration-300 relative py-2.5 px-6 rounded-full flex flex-col items-center justify-center min-w-[80px] ${
-                  isActive ? "text-brand-blue" : "text-slate-500 hover:text-slate-900"
+                  isActive ? "text-brand-blue" : "text-slate-500 hover:text-slate-900 nav-glass-link"
                 }`}
-                style={{
-                  background: isActive ? "rgba(0, 98, 190, 0.08)" : "transparent",
-                  border: isActive ? "1px solid rgba(0, 98, 190, 0.15)" : "1px solid transparent",
-                  borderTop: isActive ? "1px solid rgba(0, 98, 190, 0.25)" : "1px solid transparent",
-                  boxShadow: isActive ? "inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 2px 8px rgba(0,0,0,0.03)" : "none"
-                }}
-                onMouseEnter={(e) => {
-                  if (!isActive) {
-                    e.currentTarget.style.background = "rgba(255, 255, 255, 0.65)";
-                    e.currentTarget.style.backdropFilter = "blur(12px)";
-                    e.currentTarget.style.WebkitBackdropFilter = "blur(12px)";
-                    e.currentTarget.style.border = "1px solid rgba(255, 255, 255, 0.5)";
-                    e.currentTarget.style.borderTop = "1px solid rgba(255, 255, 255, 0.9)";
-                    e.currentTarget.style.boxShadow = "inset 0 1px 2px rgba(255, 255, 255, 0.9), 0 4px 12px rgba(0, 0, 0, 0.04)";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!isActive) {
-                    e.currentTarget.style.background = "transparent";
-                    e.currentTarget.style.backdropFilter = "none";
-                    e.currentTarget.style.WebkitBackdropFilter = "none";
-                    e.currentTarget.style.border = "1px solid transparent";
-                    e.currentTarget.style.borderTop = "1px solid transparent";
-                    e.currentTarget.style.boxShadow = "none";
-                  }
-                }}
+                style={isActive ? {
+                  background: "rgba(0, 98, 190, 0.08)",
+                  border: "1px solid rgba(0, 98, 190, 0.15)",
+                  borderTop: "1px solid rgba(0, 98, 190, 0.25)",
+                  boxShadow: "inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 2px 8px rgba(0,0,0,0.03)"
+                } : {}}
               >
                 {link.icon}
                 {link.name}
