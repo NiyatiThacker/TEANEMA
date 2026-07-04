@@ -181,15 +181,19 @@ export default function Navbar() {
                     }}
                     onMouseEnter={(e) => {
                       if (!isActive) {
-                        e.currentTarget.style.background = "rgba(0, 0, 0, 0.03)";
-                        e.currentTarget.style.border = "1px solid rgba(0, 0, 0, 0.02)";
-                        e.currentTarget.style.borderTop = "1px solid rgba(0, 0, 0, 0.04)";
-                        e.currentTarget.style.boxShadow = "inset 0 1px 1px rgba(0, 0, 0, 0.02)";
+                        e.currentTarget.style.background = "rgba(255, 255, 255, 0.65)";
+                        e.currentTarget.style.backdropFilter = "blur(12px)";
+                        e.currentTarget.style.WebkitBackdropFilter = "blur(12px)";
+                        e.currentTarget.style.border = "1px solid rgba(255, 255, 255, 0.5)";
+                        e.currentTarget.style.borderTop = "1px solid rgba(255, 255, 255, 0.9)";
+                        e.currentTarget.style.boxShadow = "inset 0 1px 2px rgba(255, 255, 255, 0.9), 0 4px 12px rgba(0, 0, 0, 0.04)";
                       }
                     }}
                     onMouseLeave={(e) => {
                       if (!isActive) {
                         e.currentTarget.style.background = "transparent";
+                        e.currentTarget.style.backdropFilter = "none";
+                        e.currentTarget.style.WebkitBackdropFilter = "none";
                         e.currentTarget.style.border = "1px solid transparent";
                         e.currentTarget.style.borderTop = "1px solid transparent";
                         e.currentTarget.style.boxShadow = "none";
@@ -260,15 +264,19 @@ export default function Navbar() {
                 }}
                 onMouseEnter={(e) => {
                   if (!isActive) {
-                    e.currentTarget.style.background = "rgba(0, 0, 0, 0.03)";
-                    e.currentTarget.style.border = "1px solid rgba(0, 0, 0, 0.02)";
-                    e.currentTarget.style.borderTop = "1px solid rgba(0, 0, 0, 0.04)";
-                    e.currentTarget.style.boxShadow = "inset 0 1px 1px rgba(0, 0, 0, 0.02)";
+                    e.currentTarget.style.background = "rgba(255, 255, 255, 0.65)";
+                    e.currentTarget.style.backdropFilter = "blur(12px)";
+                    e.currentTarget.style.WebkitBackdropFilter = "blur(12px)";
+                    e.currentTarget.style.border = "1px solid rgba(255, 255, 255, 0.5)";
+                    e.currentTarget.style.borderTop = "1px solid rgba(255, 255, 255, 0.9)";
+                    e.currentTarget.style.boxShadow = "inset 0 1px 2px rgba(255, 255, 255, 0.9), 0 4px 12px rgba(0, 0, 0, 0.04)";
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!isActive) {
                     e.currentTarget.style.background = "transparent";
+                    e.currentTarget.style.backdropFilter = "none";
+                    e.currentTarget.style.WebkitBackdropFilter = "none";
                     e.currentTarget.style.border = "1px solid transparent";
                     e.currentTarget.style.borderTop = "1px solid transparent";
                     e.currentTarget.style.boxShadow = "none";
