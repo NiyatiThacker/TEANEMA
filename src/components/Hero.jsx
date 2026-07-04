@@ -146,7 +146,7 @@ export default function Hero() {
           .reveal-hero {
             opacity: 0;
             transform: translateY(32px) scale(0.98);
-            transition: all 850ms cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
             will-change: transform, opacity;
           }
           .reveal-hero.active { opacity: 1; transform: translateY(0) scale(1); }
