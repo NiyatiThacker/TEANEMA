@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ServiceProcess({ service }) {
   return (
-    <section className="py-24 bg-slate-900 relative overflow-hidden text-white">
+    <section className="py-24 bg-[#3E2723] relative overflow-hidden text-white">
       {/* Background blobs for contrast */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-orange/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-blue/10 blur-[120px] rounded-full pointer-events-none" />

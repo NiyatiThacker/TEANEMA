@@ -90,7 +90,7 @@ export default function MissionValues() {
           }`}
         >
           <p className="text-xs font-bold uppercase tracking-widest text-brand-blue mb-3">What Drives Us</p>
-          <h2 className="text-3xl md:text-5xl font-extrabold font-display text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-extrabold font-display text-[#3E2723] tracking-tight leading-tight">
             The Principles Behind Every Campaign
           </h2>
         </div>
@@ -150,7 +150,7 @@ export default function MissionValues() {
                       <div className={`md:hidden w-8 h-8 rounded-lg flex items-center justify-center font-display font-black text-xs ${val.circleBg} ${val.textColor}`}>
                         {val.id}
                       </div>
-                      <h3 className={`text-xl font-bold font-display text-slate-900 transition-colors duration-300 ${val.textColor}`}>
+                      <h3 className={`text-xl font-bold font-display text-[#3E2723] transition-colors duration-300 ${val.textColor}`}>
                         {val.title}
                       </h3>
                     </div>

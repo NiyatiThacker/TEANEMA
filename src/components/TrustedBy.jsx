@@ -67,7 +67,7 @@ export default function TrustedBy() {
     },
     {
       name: "SHIVALIK",
-      colorClass: "hover:text-slate-900",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-6 w-auto fill-current" viewBox="0 0 100 30">
           <text x="5" y="21" className="font-display font-black text-sm tracking-widest">SHIVALIK</text>
@@ -87,7 +87,7 @@ export default function TrustedBy() {
     },
     {
       name: "CRED",
-      colorClass: "hover:text-black",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-5.5 w-auto fill-current" viewBox="0 0 90 30">
           <polygon points="5,4 18,8 18,22 5,26" fill="none" stroke="currentColor" strokeWidth="2.2" />
@@ -169,7 +169,7 @@ export default function TrustedBy() {
     },
     {
       name: "cult store",
-      colorClass: "hover:text-black",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-6 w-auto fill-current" viewBox="0 0 100 30">
           <circle cx="15" cy="15" r="4" />
@@ -314,7 +314,7 @@ export default function TrustedBy() {
     },
     {
       name: "SPECTRA",
-      colorClass: "hover:text-slate-900",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-6 w-auto fill-current" viewBox="0 0 100 30">
           <polygon points="5,22 15,7 25,22 35,12 45,22" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -371,7 +371,7 @@ export default function TrustedBy() {
     },
     {
       name: "SHIVALIK REALTY",
-      colorClass: "hover:text-slate-900",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-6 w-auto fill-current" viewBox="0 0 120 30">
           <text x="5" y="16" className="font-display font-black text-[9px] tracking-widest">SHIVALIK</text>
@@ -491,7 +491,7 @@ export default function TrustedBy() {
     },
     {
       name: "PALASSIO",
-      colorClass: "hover:text-slate-900",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-6 w-auto fill-current" viewBox="0 0 100 30">
           <text x="5" y="21" className="font-display font-black text-xs tracking-widest">PALASSIO</text>
@@ -509,7 +509,7 @@ export default function TrustedBy() {
     },
     {
       name: "navratna",
-      colorClass: "hover:text-black",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-5.5 w-auto fill-current" viewBox="0 0 100 30">
           <text x="5" y="21" className="font-sans font-light text-base tracking-tighter">navratna</text>
@@ -535,7 +535,7 @@ export default function TrustedBy() {
           <p className="text-[#F27224] text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-4">
             Some of our
           </p>
-          <h2 className="text-5xl md:text-7xl font-black font-display text-slate-900 tracking-tight">
+          <h2 className="text-5xl md:text-7xl font-black font-display text-[#3E2723] tracking-tight">
             CLIENTS
           </h2>
         </div>

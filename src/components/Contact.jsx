@@ -104,7 +104,7 @@ export default function Contact() {
 
           {/* Left Side: Form */}
           <div className="flex-1">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 tracking-tight leading-tight mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-[#3E2723] tracking-tight leading-tight mb-4">
               Ready to <span style={{ color: "#F27224" }}>scale?</span>
             </h2>
             <p className="text-lg text-slate-500 mb-12 max-w-md">
@@ -121,7 +121,7 @@ export default function Contact() {
                     required
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-slate-900 transition-colors peer"
+                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
                   <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
@@ -136,7 +136,7 @@ export default function Contact() {
                     required
                     value={formData.companyName}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-slate-900 transition-colors peer"
+                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
                   <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
@@ -153,7 +153,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-slate-900 transition-colors peer"
+                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
                   <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
@@ -168,7 +168,7 @@ export default function Contact() {
                     required
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-slate-900 transition-colors peer"
+                    className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
                   <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
@@ -184,7 +184,7 @@ export default function Contact() {
                   rows="3"
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-slate-900 transition-colors peer resize-none"
+                  className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer resize-none"
                   placeholder=" "
                 />
                 <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
@@ -197,7 +197,7 @@ export default function Contact() {
                 <button 
                   type="submit"
                   disabled={formStatus === "sending" || formStatus === "success"}
-                  className="px-10 py-5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-lg font-bold font-display shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl disabled:opacity-50 disabled:hover:translate-y-0 disabled:cursor-not-allowed group flex items-center gap-3 w-full sm:w-auto justify-center"
+                  className="px-10 py-5 rounded-full bg-[#3E2723] hover:bg-slate-800 text-white text-lg font-bold font-display shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl disabled:opacity-50 disabled:hover:translate-y-0 disabled:cursor-not-allowed group flex items-center gap-3 w-full sm:w-auto justify-center"
                 >
                   {formStatus === "idle" && "Build My Growth Plan"}
                   {formStatus === "sending" && "Sending Request..."}
@@ -236,7 +236,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-slate-900 font-bold font-display text-xl mb-1">Email Us</h4>
+                <h4 className="text-[#3E2723] font-bold font-display text-xl mb-1">Email Us</h4>
                 <p className="text-slate-500 text-sm">hello@yourbrand.com</p>
               </div>
             </a>
@@ -249,7 +249,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-slate-900 font-bold font-display text-xl mb-1">Call Us</h4>
+                <h4 className="text-[#3E2723] font-bold font-display text-xl mb-1">Call Us</h4>
                 <p className="text-slate-500 text-sm">+91 XXXXX XXXXX</p>
               </div>
             </a>
@@ -263,7 +263,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-slate-900 font-bold font-display text-xl mb-1">Our Office</h4>
+                <h4 className="text-[#3E2723] font-bold font-display text-xl mb-1">Our Office</h4>
                 <p className="text-slate-500 text-sm leading-relaxed">Ahmedabad, Gujarat, India<br/>Mon-Sat, 10 AM – 7 PM</p>
               </div>
             </div>

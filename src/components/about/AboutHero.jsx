@@ -30,7 +30,7 @@ export default function AboutHero() {
   const words = "Marketing That Earns Attention, Not Just Impressions.".split(" ");
 
   return (
-    <section className="relative w-full min-h-[100dvh] md:h-[85vh] md:min-h-[650px] overflow-hidden bg-black flex flex-col md:block pt-[70px] md:pt-24 pb-12 md:pb-16">
+    <section className="relative w-full min-h-[100dvh] md:h-[85vh] md:min-h-[650px] overflow-hidden bg-[#3E2723] flex flex-col md:block pt-[70px] md:pt-24 pb-12 md:pb-16">
       
       {/* Video Container: inline on mobile, absolute background on desktop */}
       <div className="relative w-full aspect-video md:absolute md:inset-0 md:h-full md:w-full z-0">
@@ -49,7 +49,7 @@ export default function AboutHero() {
           </video>
         )}
         {/* Soft overlay only on desktop */}
-        <div className="hidden md:block absolute inset-0 bg-black/60 backdrop-blur-[2px] z-0" />
+        <div className="hidden md:block absolute inset-0 bg-[#3E2723]/60 backdrop-blur-[2px] z-0" />
       </div>
       
 

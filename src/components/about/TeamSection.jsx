@@ -43,7 +43,7 @@ export default function TeamSection() {
             <p className="text-sm font-black uppercase tracking-[0.25em] text-[#F27224] mb-4">
               How We Started
             </p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold font-display text-slate-900 tracking-tight leading-[1.1] mb-10">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold font-display text-[#3E2723] tracking-tight leading-[1.1] mb-10">
               <span className="block mb-1 lg:mb-2">Meet</span>
               <span className="block text-[#F27224] min-h-[1.2em]">
                 <TextType
@@ -59,7 +59,7 @@ export default function TeamSection() {
             
             <div className="flex flex-col gap-6 text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
               <p>
-                Established in 2019 by <strong className="text-slate-900 font-bold">Deep Shah</strong>,
+                Established in 2019 by <strong className="text-[#3E2723] font-bold">Deep Shah</strong>,
               </p>
               <p>
                 TEANEMA was founded as a digital marketing agency strictly dedicated to elevating ordinary businesses to the stature of highly respected, established brands.
@@ -98,7 +98,7 @@ export default function TeamSection() {
             
             {/* Name and Title directly under the image (Center-aligned to match the image width) */}
             <div className="mt-8 text-center w-full max-w-[450px] flex flex-col items-center">
-              <h3 className="text-3xl md:text-4xl font-black font-display text-slate-900 uppercase tracking-wide">
+              <h3 className="text-3xl md:text-4xl font-black font-display text-[#3E2723] uppercase tracking-wide">
                 Deep Shah
               </h3>
               <p className="text-[#F27224] font-bold tracking-[0.2em] uppercase mt-3 text-sm">

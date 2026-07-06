@@ -58,7 +58,7 @@ export default function ServiceHero({ service }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-black text-[#3E2723] leading-tight"
             >
               {service.title}
             </motion.h1>

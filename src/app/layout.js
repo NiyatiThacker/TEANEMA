@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${displayFont.variable} ${inter.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
+      <body className="min-h-full flex flex-col bg-white text-[#3E2723] font-sans selection:bg-blue-600 selection:text-white">
         <ClickSpark
           sparkColor="#F27224"
           sparkSize={27}

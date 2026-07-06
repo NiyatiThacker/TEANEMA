@@ -98,7 +98,7 @@ export default function Milestones() {
           }`}
         >
           <p className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-3">Our Journey</p>
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-[#3E2723] tracking-tight leading-tight">
             From Two Laptops to a Full-Service Growth Engine
           </h2>
         </div>
@@ -111,7 +111,7 @@ export default function Milestones() {
             className="absolute left-6 md:left-1/2 top-0 bottom-0 w-[4px] -translate-x-[2px] bg-slate-200 rounded-full z-0 overflow-hidden"
           >
             <div 
-              className="w-full bg-slate-900 rounded-full transition-all duration-[1500ms] ease-out origin-top"
+              className="w-full bg-[#3E2723] rounded-full transition-all duration-[1500ms] ease-out origin-top"
               style={{
                 height: isVisible ? "100%" : "0%",
               }}
@@ -165,7 +165,7 @@ export default function Milestones() {
                       </span>
                       
                       {/* Title */}
-                      <h3 className="text-xl font-bold font-display text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">
+                      <h3 className="text-xl font-bold font-display text-[#3E2723] mb-3 group-hover:text-brand-blue transition-colors">
                         {item.title}
                       </h3>
                       

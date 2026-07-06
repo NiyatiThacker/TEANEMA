@@ -213,7 +213,7 @@ export default function Navbar() {
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href, true)}
                     className={`text-[13px] font-semibold tracking-wide transition-all duration-300 relative py-2.5 px-6 rounded-full flex flex-col items-center justify-center min-w-[80px] focus:outline-none ${
-                      isActive ? "text-brand-blue" : "text-slate-500 hover:text-slate-900 nav-glass-link"
+                      isActive ? "text-brand-blue" : "text-slate-500 hover:text-[#3E2723] nav-glass-link"
                     }`}
                     style={isActive ? {
                       background: "rgba(0, 98, 190, 0.08)",
@@ -276,7 +276,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`text-[13px] font-semibold tracking-wide transition-all duration-300 relative py-2.5 px-6 rounded-full flex flex-col items-center justify-center min-w-[80px] ${
-                  isActive ? "text-brand-blue" : "text-slate-500 hover:text-slate-900 nav-glass-link"
+                  isActive ? "text-brand-blue" : "text-slate-500 hover:text-[#3E2723] nav-glass-link"
                 }`}
                 style={isActive ? {
                   background: "rgba(0, 98, 190, 0.08)",
@@ -312,7 +312,7 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 text-slate-500 hover:text-slate-900 focus:outline-none transition-colors"
+          className="md:hidden p-2 text-slate-500 hover:text-[#3E2723] focus:outline-none transition-colors"
           aria-label="Toggle menu"
         >
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -401,7 +401,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`text-lg font-medium py-2 border-b border-slate-100 transition-colors flex items-center gap-3 ${
-                  isActive ? "text-brand-blue" : "text-slate-600 hover:text-slate-900"
+                  isActive ? "text-brand-blue" : "text-slate-600 hover:text-[#3E2723]"
                 }`}
               >
                 {link.icon}

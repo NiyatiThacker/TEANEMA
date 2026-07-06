@@ -68,11 +68,11 @@ export default function OurStory() {
           }`}
         >
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#F27224] mb-4">How It All Kicked Off</p>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold font-display text-slate-900 tracking-tight leading-[1.1] mb-8">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold font-display text-[#3E2723] tracking-tight leading-[1.1] mb-8">
             Built by Marketers Who Were Tired of Guesswork
           </h2>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            It all started with a simple frustration — brands were spending money on marketing without knowing what actually worked. What began as a small team solving problems has grown into a full-service agency. Our mission has stayed exactly the same: <strong className="text-slate-900 font-semibold">deliver marketing that's measurable, honest, and built for real growth.</strong>
+            It all started with a simple frustration — brands were spending money on marketing without knowing what actually worked. What began as a small team solving problems has grown into a full-service agency. Our mission has stayed exactly the same: <strong className="text-[#3E2723] font-semibold">deliver marketing that's measurable, honest, and built for real growth.</strong>
           </p>
         </div>
 

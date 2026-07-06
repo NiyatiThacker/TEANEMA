@@ -105,7 +105,7 @@ export default function AboutCTA() {
       <div className="max-w-4xl mx-auto px-6 md:px-12 relative z-10 text-center flex flex-col items-center pointer-events-none">
         
         <h2 
-          className={`text-5xl md:text-6xl lg:text-7xl font-extrabold font-display tracking-tight text-slate-900 mb-8 transition-all transform duration-1000 ${
+          className={`text-5xl md:text-6xl lg:text-7xl font-extrabold font-display tracking-tight text-[#3E2723] mb-8 transition-all transform duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
@@ -141,7 +141,7 @@ export default function AboutCTA() {
 
           {/* Magnetic Secondary CTA */}
           <MagneticButton href="#">
-            <div className="inline-flex items-center justify-center px-6 py-4 font-bold text-slate-600 hover:text-slate-900 transition-colors duration-300 text-lg">
+            <div className="inline-flex items-center justify-center px-6 py-4 font-bold text-slate-600 hover:text-[#3E2723] transition-colors duration-300 text-lg">
               Book a Free Strategy Call
             </div>
           </MagneticButton>

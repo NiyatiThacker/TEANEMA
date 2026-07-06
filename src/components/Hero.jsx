@@ -67,7 +67,7 @@ export default function Hero() {
       {/* Preloader */}
       {showPreloader && (
         <div 
-          className={`fixed inset-0 z-[9999] bg-[#060810] flex flex-col items-center justify-center transition-opacity duration-1000 ease-in-out ${
+          className={`fixed inset-0 z-[9999] bg-[#3E2723] flex flex-col items-center justify-center transition-opacity duration-1000 ease-in-out ${
             isVideoLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'
           }`}
         >
@@ -86,10 +86,10 @@ export default function Hero() {
       )}
 
       {/* 1. Full-screen Video Hero */}
-      <section className="relative w-full flex flex-col overflow-hidden bg-[#060810] pt-[70px]">
+      <section className="relative w-full flex flex-col overflow-hidden bg-[#3E2723] pt-[70px]">
 
         {/* Video Container (Always on top, full width) */}
-        <div className="relative w-full aspect-video z-0 bg-[#060810]">
+        <div className="relative w-full aspect-video z-0 bg-[#3E2723]">
           <video
             ref={videoRef1}
             src="/DIGI.mp4"
@@ -105,7 +105,7 @@ export default function Hero() {
         </div>
 
         {/* Text Block (Always centered below the video) */}
-        <div className="relative z-20 flex flex-col items-center justify-center text-center px-8 md:px-16 lg:px-24 w-full bg-[#060810] py-16 md:py-24">
+        <div className="relative z-20 flex flex-col items-center justify-center text-center px-8 md:px-16 lg:px-24 w-full bg-[#3E2723] py-16 md:py-24">
           <h2 className="text-[11px] md:text-sm font-extrabold tracking-[0.2em] uppercase text-slate-400 mb-2 md:mb-4">
             Dare to be different?
           </h2>
@@ -264,7 +264,7 @@ export default function Hero() {
             >
               {/* Card 1: Main Headline */}
               <ScrollStackItem itemClassName="hero-stack-card flex flex-col justify-center text-left">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-slate-900 leading-[1.08] mb-4">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-[#3E2723] leading-[1.08] mb-4">
                   Grow Your Brand.
                   <span className="block mt-1" style={{ color: "#0062BE" }}>
                     Dominate Your Market.
@@ -281,7 +281,7 @@ export default function Hero() {
 
               {/* Card 2: Slogan & Subhead */}
               <ScrollStackItem itemClassName="hero-stack-card flex flex-col justify-center text-left">
-                <div className="font-display font-black text-4xl sm:text-5xl text-slate-950 leading-[0.95] tracking-tight mb-5">
+                <div className="font-display font-black text-4xl sm:text-5xl text-[#3E2723] leading-[0.95] tracking-tight mb-5">
                   Making<br />
                   Advertising<br />
                   Great again!
@@ -293,7 +293,7 @@ export default function Hero() {
 
               {/* Card 3: CTAs */}
               <ScrollStackItem itemClassName="hero-stack-card flex flex-col justify-center text-left">
-                <h3 className="text-3xl font-extrabold font-display text-slate-900 mb-6 tracking-tight">Ready to scale?</h3>
+                <h3 className="text-3xl font-extrabold font-display text-[#3E2723] mb-6 tracking-tight">Ready to scale?</h3>
                 <div className="flex flex-col gap-4 w-full sm:w-4/5 max-w-sm">
                   <a
                     href="#contact"

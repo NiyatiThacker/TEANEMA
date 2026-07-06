@@ -113,7 +113,7 @@ export default function Impact() {
         {/* Header */}
         <div className="text-center mb-20 max-w-3xl mx-auto reveal">
           <p className="text-brand-blue text-[11px] font-extrabold uppercase tracking-[0.2em] mb-4">Our Impact</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold font-display text-slate-900 tracking-tight leading-[1.1] mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold font-display text-[#3E2723] tracking-tight leading-[1.1] mb-6">
             Numbers That Speak Louder Than Promises.
           </h2>
           <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto">
@@ -130,7 +130,7 @@ export default function Impact() {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Stat Value */}
-              <div className="text-5xl md:text-6xl lg:text-7xl font-black font-display tracking-tighter text-slate-900 mb-4 transition-transform duration-500 ease-out group-hover:scale-110">
+              <div className="text-5xl md:text-6xl lg:text-7xl font-black font-display tracking-tighter text-[#3E2723] mb-4 transition-transform duration-500 ease-out group-hover:scale-110">
                 <CountUp
                   end={stat.end}
                   decimals={stat.decimals || 0}
@@ -146,7 +146,7 @@ export default function Impact() {
               />
 
               {/* Text Info */}
-              <h3 className="text-xl font-bold text-slate-900 font-display mb-3">
+              <h3 className="text-xl font-bold text-[#3E2723] font-display mb-3">
                 {stat.label}
               </h3>
               <p className="text-sm text-slate-500 font-medium leading-relaxed max-w-[200px] lg:max-w-none">

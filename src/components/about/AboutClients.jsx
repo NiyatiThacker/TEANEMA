@@ -95,7 +95,7 @@ export default function AboutClients() {
     },
     {
       name: "CRED",
-      colorClass: "hover:text-black",
+      colorClass: "hover:text-[#3E2723]",
       svg: (
         <svg className="h-5.5 w-auto fill-current" viewBox="0 0 90 30">
           <polygon points="5,4 18,8 18,22 5,26" fill="none" stroke="currentColor" strokeWidth="2.2" />
@@ -146,7 +146,7 @@ export default function AboutClients() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold font-display text-slate-900 tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold font-display text-[#3E2723] tracking-tight mb-4">
             Brands That Bet on Us (And Won)
           </h2>
           <p className="text-lg text-slate-600">
@@ -188,21 +188,21 @@ export default function AboutClients() {
           }`}
         >
           <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100">
-            <h3 className="text-4xl md:text-5xl font-black font-display text-slate-900 mb-2">
+            <h3 className="text-4xl md:text-5xl font-black font-display text-[#3E2723] mb-2">
               {brands}<span className="text-[#F27224]">+</span>
             </h3>
             <p className="text-slate-500 font-medium uppercase tracking-wider text-sm">Brands Served</p>
           </div>
           
           <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100">
-            <h3 className="text-4xl md:text-5xl font-black font-display text-slate-900 mb-2">
+            <h3 className="text-4xl md:text-5xl font-black font-display text-[#3E2723] mb-2">
               {impressions}<span className="text-[#0062BE]">M+</span>
             </h3>
             <p className="text-slate-500 font-medium uppercase tracking-wider text-sm">Impressions Generated</p>
           </div>
           
           <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100">
-            <h3 className="text-4xl md:text-5xl font-black font-display text-slate-900 mb-2">
+            <h3 className="text-4xl md:text-5xl font-black font-display text-[#3E2723] mb-2">
               {retention}<span className="text-[#10B981]">%</span>
             </h3>
             <p className="text-slate-500 font-medium uppercase tracking-wider text-sm">Client Retention</p>

@@ -65,7 +65,7 @@ export default function ServicesHero() {
 
         {/* Headline */}
         <h1 
-          className={`text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-slate-900 leading-[1.15] mb-8 transition-all duration-700 delay-75 transform ${
+          className={`text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-[#3E2723] leading-[1.15] mb-8 transition-all duration-700 delay-75 transform ${
             isMounted 
               ? "opacity-100 translate-y-0 filter-none" 
               : "opacity-0 translate-y-6 blur-[8px]"
@@ -97,7 +97,7 @@ export default function ServicesHero() {
           <a
             href="#services-cta"
             onClick={handleScrollToCTA}
-            className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-slate-900 text-white font-semibold text-base hover:bg-black hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-950/10"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#3E2723] text-white font-semibold text-base hover:bg-[#3E2723] hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-950/10"
           >
             Talk to Our Team
           </a>

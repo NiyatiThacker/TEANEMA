@@ -18,7 +18,7 @@ export default function ServiceContent({ service }) {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">About This Service</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#3E2723] mb-6">About This Service</h2>
               <p className="text-xl text-slate-700 leading-relaxed font-medium mb-6">
                 {service.content.intro}
               </p>
@@ -37,7 +37,7 @@ export default function ServiceContent({ service }) {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100 shadow-xl shadow-slate-200/20"
             >
-              <h3 className="text-2xl font-bold text-slate-900 mb-8">Key Benefits</h3>
+              <h3 className="text-2xl font-bold text-[#3E2723] mb-8">Key Benefits</h3>
               
               <div className="flex flex-col gap-8">
                 {service.benefits.map((benefit, index) => (
@@ -53,7 +53,7 @@ export default function ServiceContent({ service }) {
                       <VscCheck className="w-5 h-5 text-brand-blue" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-slate-900 mb-1">{benefit.title}</h4>
+                      <h4 className="text-lg font-bold text-[#3E2723] mb-1">{benefit.title}</h4>
                       <p className="text-slate-600 leading-relaxed">{benefit.description}</p>
                     </div>
                   </motion.div>

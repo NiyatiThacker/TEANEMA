@@ -92,7 +92,7 @@ export default function Services() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24 reveal">
           <p className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-3">What We Do</p>
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-slate-900 tracking-tight leading-tight mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-[#3E2723] tracking-tight leading-tight mb-6">
             Marketing Solutions Built to Convert
           </h2>
           <p className="text-lg text-slate-500 font-normal leading-relaxed">
@@ -113,7 +113,7 @@ export default function Services() {
               </div>
 
               {/* Title */}
-              <h3 className={`text-xl font-bold font-display text-slate-900 mb-3 transition-colors duration-300 ${service.textHoverClass}`}>
+              <h3 className={`text-xl font-bold font-display text-[#3E2723] mb-3 transition-colors duration-300 ${service.textHoverClass}`}>
                 {service.title}
               </h3>
 

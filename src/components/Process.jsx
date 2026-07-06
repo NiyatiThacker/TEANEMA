@@ -88,7 +88,7 @@ export default function Process() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 reveal">
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#F27224" }}>Our Process</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold font-display text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold font-display text-[#3E2723] tracking-tight leading-tight">
             How We Take You From <span className="gradient-text">Zero to Growth</span>
           </h2>
         </div>
@@ -163,7 +163,7 @@ export default function Process() {
                     <span className="font-display font-black text-6xl md:text-8xl opacity-20 leading-none" style={{ color: step.iconColor }}>
                       {step.id}
                     </span>
-                    <h3 className="text-3xl md:text-5xl font-bold font-display text-slate-900 leading-tight mb-1 md:mb-2 whitespace-normal md:whitespace-nowrap">
+                    <h3 className="text-3xl md:text-5xl font-bold font-display text-[#3E2723] leading-tight mb-1 md:mb-2 whitespace-normal md:whitespace-nowrap">
                       {step.title}
                     </h3>
                   </div>

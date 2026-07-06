@@ -62,7 +62,7 @@ export default function Benefits() {
         {/* Section Header */}
         <div className="max-w-3xl mb-16 md:mb-24 reveal">
           <p className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-3">Why Us</p>
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-[#3E2723] tracking-tight leading-tight">
             Marketing That's Built Around Your Business, Not a Template
           </h2>
         </div>
@@ -87,7 +87,7 @@ export default function Benefits() {
               </div>
 
               {/* Title */}
-              <h3 className={`text-lg font-bold font-display text-slate-900 mb-3 transition-colors duration-300 ${benefit.textColor}`}>
+              <h3 className={`text-lg font-bold font-display text-[#3E2723] mb-3 transition-colors duration-300 ${benefit.textColor}`}>
                 {benefit.title}
               </h3>
 

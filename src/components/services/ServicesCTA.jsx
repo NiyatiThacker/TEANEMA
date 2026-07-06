@@ -50,7 +50,7 @@ export default function ServicesCTA() {
         
         {/* Heading */}
         <h2 
-          className={`text-3xl md:text-5xl font-extrabold font-display tracking-tight text-slate-900 leading-tight mb-6 transition-all transform duration-[650ms] ${
+          className={`text-3xl md:text-5xl font-extrabold font-display tracking-tight text-[#3E2723] leading-tight mb-6 transition-all transform duration-[650ms] ${
             isVisible ? "opacity-100 translate-y-0 ease-out" : "opacity-0 translate-y-6"
           }`}
         >
@@ -74,7 +74,7 @@ export default function ServicesCTA() {
         >
           <a
             href="/#contact"
-            className="relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-slate-900 text-white font-semibold text-base hover:bg-black hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-950/10 cursor-pointer overflow-hidden group btn-pulse"
+            className="relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#3E2723] text-white font-semibold text-base hover:bg-[#3E2723] hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-950/10 cursor-pointer overflow-hidden group btn-pulse"
           >
             Get a Free Consultation
           </a>
