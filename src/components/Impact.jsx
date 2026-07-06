@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import ScrollStack, { ScrollStackItem } from "./ScrollStack";
 
 function CountUp({ end, duration = 1800, suffix = "", prefix = "", decimals = 0 }) {
   const [count, setCount] = useState(0);
@@ -109,6 +108,13 @@ export default function Impact() {
 
   return (
     <section id="impact" className="relative bg-slate-50 border-y border-slate-100 z-10">
+      <style>{`
+        @keyframes shimmer {
+          0% { transform: translateX(-150%) skewX(-15deg); }
+          100% { transform: translateX(150%) skewX(-15deg); }
+        }
+      `}</style>
+      
       {/* Decorative details */}
       <div className="absolute top-40 right-10 w-96 h-96 bg-slate-100/50 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-40 left-10 w-96 h-96 bg-slate-100 rounded-full blur-[100px] pointer-events-none" />
@@ -127,50 +133,37 @@ export default function Impact() {
             </p>
           </div>
 
-          {/* Right Side - Scrolling Metrics Stack */}
-          <div className="lg:col-span-7 flex flex-col relative h-[600px] w-full mt-10 lg:mt-0">
-            <style>{`
-              .impact-scroll-stack .scroll-stack-inner {
-                padding: 1rem 0 !important;
-                min-height: 100% !important;
-              }
-              .impact-scroll-stack .scroll-stack-card {
-                height: 400px !important;
-                padding: 1rem !important;
-                border-radius: 2rem !important;
-                margin-top: 0 !important;
-                background: rgba(248, 250, 252, 0.8) !important;
-                backdrop-filter: blur(8px) !important;
-                border: 1px solid rgba(0,0,0,0.02) !important;
-                box-shadow: none !important;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-              }
-              .impact-scroll-stack::-webkit-scrollbar {
-                display: none;
-              }
-              .impact-scroll-stack {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-              }
-            `}</style>
-            
-            <ScrollStack
-              useWindowScroll={false}
-              itemDistance={40}
-              itemScale={0.05}
-              itemStackDistance={20}
-              stackPosition="5%"
-              scaleEndPosition="2%"
-              baseScale={0.85}
-              blurAmount={1.5}
-              className="impact-scroll-stack h-full w-full"
-            >
-              {stats.map((stat, index) => (
-                <ScrollStackItem key={stat.id}>
-                  {/* Animated Massive Stat Value */}
-                  <div className={`text-7xl md:text-8xl lg:text-9xl font-black font-display tracking-tighter leading-none mb-4 md:mb-6 ${stat.colorClass}`}>
+          {/* Right Side - Bento Box Grid */}
+          <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mt-12 lg:mt-0 reveal">
+            {stats.map((stat, index) => {
+              // Asymmetric Layout: First and last items take full width, middle two split the row
+              const isFullWidth = index === 0 || index === 3;
+              
+              return (
+                <div 
+                  key={stat.id}
+                  className={`group relative bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden flex flex-col justify-between ${
+                    isFullWidth ? "md:col-span-2" : "md:col-span-1"
+                  }`}
+                >
+                  {/* Subtle glass hover glow using the stat's brand color */}
+                  <div 
+                    className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none ${stat.colorClass.replace('text-', 'bg-')}`} 
+                  />
+                  
+                  {/* Glass Shimmer Sweep on Hover */}
+                  <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_ease-out] bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none z-10" />
+
+                  <div className="relative z-20">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-900 font-display mb-2">
+                      {stat.label}
+                    </h3>
+                    <p className="text-sm md:text-base text-slate-500 font-medium">
+                      {stat.desc}
+                    </p>
+                  </div>
+
+                  <div className={`relative z-20 mt-12 ${isFullWidth ? 'text-6xl md:text-7xl lg:text-8xl' : 'text-5xl md:text-6xl'} font-black font-display tracking-tighter leading-none ${stat.colorClass}`}>
                     <CountUp
                       end={stat.end}
                       decimals={stat.decimals || 0}
@@ -178,19 +171,9 @@ export default function Impact() {
                       suffix={stat.suffix || ""}
                     />
                   </div>
-
-                  {/* Stat Label */}
-                  <h3 className="text-3xl md:text-4xl font-bold text-slate-900 font-display mb-3 md:mb-4">
-                    {stat.label}
-                  </h3>
-
-                  {/* Stat Desc */}
-                  <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-lg leading-relaxed">
-                    {stat.desc}
-                  </p>
-                </ScrollStackItem>
-              ))}
-            </ScrollStack>
+                </div>
+              );
+            })}
           </div>
 
         </div>
