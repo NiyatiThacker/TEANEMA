@@ -7,14 +7,14 @@ import {
   VscDeviceCameraVideo, VscArchive, VscHome, VscMegaphone, 
   VscOrganization, VscSymbolColor, VscPlayCircle, VscRecord, 
   VscMap, VscEye, VscHeart, VscGraphLine, VscCode, 
-  VscSearch, VscDeviceCamera, VscCreditCard 
+  VscSearch, VscDeviceCamera, VscCreditCard, VscLayout
 } from "react-icons/vsc";
 
 const IconMap = {
   VscDeviceCameraVideo, VscArchive, VscHome, VscMegaphone, 
   VscOrganization, VscSymbolColor, VscPlayCircle, VscRecord, 
   VscMap, VscEye, VscHeart, VscGraphLine, VscCode, 
-  VscSearch, VscDeviceCamera, VscCreditCard
+  VscSearch, VscDeviceCamera, VscCreditCard, VscLayout
 };
 
 const containerVariants = {
@@ -44,7 +44,7 @@ export default function ServicesGrid() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-black text-[#3E2723] mb-6"
           >
-            Our Expertise
+            Services That Brew Impact
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

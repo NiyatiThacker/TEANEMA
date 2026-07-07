@@ -54,7 +54,7 @@ export default function ServicesCTA() {
             isVisible ? "opacity-100 translate-y-0 ease-out" : "opacity-0 translate-y-6"
           }`}
         >
-          Not Sure Which Service Fits Your Goals?
+          Let's Build Something Extraordinary Together.
         </h2>
 
         {/* Subtext */}
@@ -63,7 +63,7 @@ export default function ServicesCTA() {
             isVisible ? "opacity-100 translate-y-0 ease-out delay-100" : "opacity-0 translate-y-6"
           }`}
         >
-          Tell us what you're trying to achieve — we'll recommend the right mix of services to get you there.
+          Whether you're launching a new brand, scaling an existing business, or planning your next big campaign, TeaNema is ready to turn your vision into measurable success.
         </p>
 
         {/* Pulsing CTA Button */}
@@ -76,7 +76,7 @@ export default function ServicesCTA() {
             href="/#contact"
             className="relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#3E2723] text-white font-semibold text-base hover:bg-[#3E2723] hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-950/10 cursor-pointer overflow-hidden group btn-pulse"
           >
-            Get a Free Consultation
+            Talk to Our Team →
           </a>
         </div>
 

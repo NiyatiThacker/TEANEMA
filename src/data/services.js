@@ -2,9 +2,9 @@ export const servicesData = [
   {
     id: "cgi-advertising",
     slug: "cgi-advertising",
-    title: "CGI Advertising",
-    shortDescription: "Breathtaking computer-generated imagery that defies reality and captures imagination.",
-    icon: "VscDeviceCameraVideo",
+    title: "Branding & Identity",
+    shortDescription: "Building brands that don't just look good but mean something.",
+    icon: "VscLayout",
     heroSubtitle: "Transform the Impossible into the Unforgettable",
     content: {
       intro: "In a world saturated with standard photography, CGI Advertising breaks through the noise. We create photorealistic, physics-defying campaigns that stop scrollers in their tracks and burn your brand into their memory.",
@@ -25,9 +25,9 @@ export const servicesData = [
   {
     id: "cgi-product-advertising",
     slug: "cgi-product-advertising",
-    title: "CGI Product Advertising",
-    shortDescription: "Hyper-realistic 3D product visualizations that highlight every detail.",
-    icon: "VscArchive",
+    title: "Creative Strategy",
+    shortDescription: "The roadmap to your brand's next big breakthrough.",
+    icon: "VscPlayCircle",
     heroSubtitle: "Your Product, Elevated to Perfection",
     content: {
       intro: "Showcase your product in its absolute best light. CGI Product Advertising allows for macro-level detail, impossible camera angles, and perfect environmental staging that traditional photography simply cannot achieve.",
@@ -48,9 +48,9 @@ export const servicesData = [
   {
     id: "real-estate-marketing",
     slug: "real-estate-marketing",
-    title: "Real Estate Marketing",
-    shortDescription: "Immersive architectural visualizations and virtual tours for property developers.",
-    icon: "VscHome",
+    title: "Content Production",
+    shortDescription: "Cinematic storytelling that stops the scroll and starts conversations.",
+    icon: "VscDeviceCameraVideo",
     heroSubtitle: "Sell the Dream Before the Foundation is Poured",
     content: {
       intro: "In luxury real estate, vision is everything. We create breathtaking architectural visualizations, fly-throughs, and virtual reality experiences that allow buyers to step into their future homes long before construction begins.",
@@ -71,9 +71,9 @@ export const servicesData = [
   {
     id: "advertising-agency",
     slug: "advertising-agency",
-    title: "Advertising Agency",
-    shortDescription: "End-to-end creative campaigns that build brands and drive revenue.",
-    icon: "VscMegaphone",
+    title: "UI/UX Design",
+    shortDescription: "Digital experiences designed for both beauty and behavior.",
+    icon: "VscSearch",
     heroSubtitle: "Data-Driven Strategy Meets Limitless Creativity",
     content: {
       intro: "As a full-service advertising agency, we don't just make things look pretty—we make them perform. We partner with ambitious brands to craft holistic, multi-channel campaigns that dominate markets.",
@@ -94,9 +94,9 @@ export const servicesData = [
   {
     id: "exhibition-stall-design",
     slug: "exhibition-stall-design",
-    title: "Exhibition Stall Design",
-    shortDescription: "Show-stopping physical and digital exhibition experiences.",
-    icon: "VscOrganization",
+    title: "Web Development",
+    shortDescription: "High-performance websites that work as hard as your business.",
+    icon: "VscMap",
     heroSubtitle: "Dominate the Expo Floor",
     content: {
       intro: "In a crowded exhibition hall, you have seconds to capture attention. Our exhibition stall designs are architectural marvels blended with cutting-edge digital integrations that draw massive crowds.",
@@ -117,8 +117,8 @@ export const servicesData = [
   {
     id: "branding-brand-identity",
     slug: "branding-brand-identity",
-    title: "Branding & Brand Identity",
-    shortDescription: "Crafting iconic visual identities that resonate and endure.",
+    title: "App Development",
+    shortDescription: "Custom mobile applications built for engagement and scale.",
     icon: "VscSymbolColor",
     heroSubtitle: "Define Your Legacy",
     content: {
@@ -140,9 +140,9 @@ export const servicesData = [
   {
     id: "production-house",
     slug: "production-house",
-    title: "Production House",
-    shortDescription: "Cinematic, high-end video production for commercials and corporate films.",
-    icon: "VscPlayCircle",
+    title: "E-Commerce Solutions",
+    shortDescription: "Seamless online stores designed to convert browsers into buyers.",
+    icon: "VscMegaphone",
     heroSubtitle: "Hollywood-Grade Storytelling for Brands",
     content: {
       intro: "We are a full-scale production house equipped with state-of-the-art cinematic gear and visionary directors. We don't just shoot videos; we craft emotional, visually stunning films that captivate audiences.",
@@ -163,8 +163,8 @@ export const servicesData = [
   {
     id: "digital-video-campaigns",
     slug: "digital-video-campaigns",
-    title: "Digital Video Campaigns",
-    shortDescription: "Fast-paced, highly engaging video content engineered for social media algorithms.",
+    title: "Performance Marketing",
+    shortDescription: "Data-driven ad campaigns that deliver measurable ROI.",
     icon: "VscRecord",
     heroSubtitle: "Stop the Scroll. Drive the Click.",
     content: {
@@ -186,9 +186,9 @@ export const servicesData = [
   {
     id: "outdoor-advertising",
     slug: "outdoor-advertising",
-    title: "Outdoor Advertising",
-    shortDescription: "Massive, unmissable physical campaigns that dominate cityscapes.",
-    icon: "VscMap",
+    title: "Copywriting & Scripting",
+    shortDescription: "Growing communities and building loyal followings, one post at a time.",
+    icon: "VscArchive",
     heroSubtitle: "Own the Streets. Command the Skyline.",
     content: {
       intro: "Make a statement that cannot be ignored. Our outdoor advertising campaigns blend striking creative with strategic high-traffic placements to create massive brand awareness in the physical world.",
@@ -209,8 +209,8 @@ export const servicesData = [
   {
     id: "3d-anamorphic-advertising",
     slug: "3d-anamorphic-advertising",
-    title: "3D Anamorphic Advertising",
-    shortDescription: "Mind-bending forced-perspective 3D billboards that go viral globally.",
+    title: "SEO & Content Marketing",
+    shortDescription: "Making sure your brand is found exactly when it matters most.",
     icon: "VscEye",
     heroSubtitle: "Advertising That Breaks the Screen",
     content: {
@@ -233,7 +233,7 @@ export const servicesData = [
     id: "social-media-management",
     slug: "social-media-management",
     title: "Social Media Management",
-    shortDescription: "Curating a powerful, engaged community around your brand.",
+    shortDescription: "Words that persuade, sell, and tell a compelling story.",
     icon: "VscHeart",
     heroSubtitle: "Build a Cult Following",
     content: {
@@ -255,8 +255,8 @@ export const servicesData = [
   {
     id: "meta-google-ads",
     slug: "meta-google-ads",
-    title: "Meta & Google Ads",
-    shortDescription: "Laser-targeted performance marketing that drives measurable ROI.",
+    title: "3D & CGI Production",
+    shortDescription: "Pushing the boundaries of reality with mind-bending visuals.",
     icon: "VscGraphLine",
     heroSubtitle: "Turn Ad Spend into Predictable Revenue",
     content: {
@@ -278,8 +278,8 @@ export const servicesData = [
   {
     id: "website-design-development",
     slug: "website-design-development",
-    title: "Website Design & Development",
-    shortDescription: "Ultra-fast, beautifully designed web experiences that convert.",
+    title: "Photography & Art Direction",
+    shortDescription: "Capturing the essence of your brand through a powerful lens.",
     icon: "VscCode",
     heroSubtitle: "Your Digital Flagship Store",
     content: {
@@ -301,8 +301,8 @@ export const servicesData = [
   {
     id: "seo",
     slug: "seo",
-    title: "Search Engine Optimization (SEO)",
-    shortDescription: "Dominate Google search results and capture high-intent organic traffic.",
+    title: "Corporate Filmmaking",
+    shortDescription: "Professional, high-quality videos that communicate your brand's authority.",
     icon: "VscSearch",
     heroSubtitle: "Own the First Page",
     content: {
@@ -324,8 +324,8 @@ export const servicesData = [
   {
     id: "promotional-videos",
     slug: "promotional-videos",
-    title: "Promotional Videos",
-    shortDescription: "Punchy, dynamic videos designed to highlight offers and drive sales.",
+    title: "Outdoor Advertising (OOH)",
+    shortDescription: "Dominating physical spaces with unmissable campaigns.",
     icon: "VscDeviceCamera",
     heroSubtitle: "Hype Your Next Big Thing",
     content: {
@@ -347,8 +347,8 @@ export const servicesData = [
   {
     id: "billboards-smds",
     slug: "billboards-smds",
-    title: "Billboards & SMDs",
-    shortDescription: "High-impact static and digital billboard campaigns.",
+    title: "PR & Media Outreach",
+    shortDescription: "Getting your story in front of the right eyes and the biggest publishers.",
     icon: "VscCreditCard",
     heroSubtitle: "Supersize Your Brand",
     content: {
