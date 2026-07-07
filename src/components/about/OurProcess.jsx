@@ -28,9 +28,6 @@ export default function OurProcess() {
         
         {/* Header matching the screenshot vibe */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-[#F27224] mb-4">
-            Our Process
-          </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-display text-[#3E2723] tracking-tight">
             Behind the Curtain
           </h2>

@@ -127,7 +127,7 @@ export default function AboutCTA() {
           }`}
         >
           {/* Magnetic Primary Button */}
-          <MagneticButton href="/contact">
+          <MagneticButton href="/#contact">
             <div className="group/btn relative inline-flex items-center justify-center px-10 py-5 font-bold text-white bg-[#F27224] rounded-full overflow-hidden transition-all duration-300 shadow-xl shadow-orange-500/20 hover:shadow-[0_10px_40px_rgba(242,114,36,0.3)]">
               <span className="absolute inset-0 bg-[#e05a0a] w-0 group-hover/btn:w-full transition-all duration-300 ease-out z-0" />
               <span className="relative z-10 flex items-center gap-3 text-lg tracking-wide">

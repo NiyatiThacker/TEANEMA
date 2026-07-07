@@ -1,10 +1,11 @@
 export const servicesData = [
+  // --- Original 16 Services (Set A) ---
   {
     id: "cgi-advertising",
     slug: "cgi-advertising",
-    title: "Branding & Identity",
-    shortDescription: "Building brands that don't just look good but mean something.",
-    icon: "VscLayout",
+    title: "CGI Advertising",
+    shortDescription: "Hyper-realistic, physics-defying 3D visual campaigns that stop scrollers in their tracks.",
+    icon: "VscEye",
     heroSubtitle: "Transform the Impossible into the Unforgettable",
     content: {
       intro: "In a world saturated with standard photography, CGI Advertising breaks through the noise. We create photorealistic, physics-defying campaigns that stop scrollers in their tracks and burn your brand into their memory.",
@@ -25,9 +26,9 @@ export const servicesData = [
   {
     id: "cgi-product-advertising",
     slug: "cgi-product-advertising",
-    title: "Creative Strategy",
-    shortDescription: "The roadmap to your brand's next big breakthrough.",
-    icon: "VscPlayCircle",
+    title: "CGI Product Advertising",
+    shortDescription: "Showcase your products in their absolute best light with macros and impossible angles.",
+    icon: "VscSymbolColor",
     heroSubtitle: "Your Product, Elevated to Perfection",
     content: {
       intro: "Showcase your product in its absolute best light. CGI Product Advertising allows for macro-level detail, impossible camera angles, and perfect environmental staging that traditional photography simply cannot achieve.",
@@ -48,9 +49,9 @@ export const servicesData = [
   {
     id: "real-estate-marketing",
     slug: "real-estate-marketing",
-    title: "Content Production",
-    shortDescription: "Cinematic storytelling that stops the scroll and starts conversations.",
-    icon: "VscDeviceCameraVideo",
+    title: "Real Estate Marketing",
+    shortDescription: "Breathtaking architectural visualizations, fly-throughs, and virtual tours to pre-sell inventory.",
+    icon: "VscHome",
     heroSubtitle: "Sell the Dream Before the Foundation is Poured",
     content: {
       intro: "In luxury real estate, vision is everything. We create breathtaking architectural visualizations, fly-throughs, and virtual reality experiences that allow buyers to step into their future homes long before construction begins.",
@@ -71,9 +72,9 @@ export const servicesData = [
   {
     id: "advertising-agency",
     slug: "advertising-agency",
-    title: "UI/UX Design",
-    shortDescription: "Digital experiences designed for both beauty and behavior.",
-    icon: "VscSearch",
+    title: "Advertising Agency",
+    shortDescription: "Full-service marketing campaigns, strategic media buying, and unified messaging that scales.",
+    icon: "VscMegaphone",
     heroSubtitle: "Data-Driven Strategy Meets Limitless Creativity",
     content: {
       intro: "As a full-service advertising agency, we don't just make things look pretty—we make them perform. We partner with ambitious brands to craft holistic, multi-channel campaigns that dominate markets.",
@@ -94,8 +95,8 @@ export const servicesData = [
   {
     id: "exhibition-stall-design",
     slug: "exhibition-stall-design",
-    title: "Web Development",
-    shortDescription: "High-performance websites that work as hard as your business.",
+    title: "Exhibition Stall Design",
+    shortDescription: "Architectural booth marvels integrated with digital screens to dominate the expo floor.",
     icon: "VscMap",
     heroSubtitle: "Dominate the Expo Floor",
     content: {
@@ -117,9 +118,9 @@ export const servicesData = [
   {
     id: "branding-brand-identity",
     slug: "branding-brand-identity",
-    title: "App Development",
-    shortDescription: "Custom mobile applications built for engagement and scale.",
-    icon: "VscSymbolColor",
+    title: "Branding & Brand Identity",
+    shortDescription: "Cohesive visual languages, logo design systems, and comprehensive brand books.",
+    icon: "VscLayout",
     heroSubtitle: "Define Your Legacy",
     content: {
       intro: "Your brand is more than a logo; it's the gut feeling people have when they interact with your business. We build iconic, cohesive brand identities that instantly communicate your value and position you as a premium leader in your industry.",
@@ -140,9 +141,9 @@ export const servicesData = [
   {
     id: "production-house",
     slug: "production-house",
-    title: "E-Commerce Solutions",
-    shortDescription: "Seamless online stores designed to convert browsers into buyers.",
-    icon: "VscMegaphone",
+    title: "Production House",
+    shortDescription: "Hollywood-grade video production, storyboards, and commercial filming setups.",
+    icon: "VscDeviceCameraVideo",
     heroSubtitle: "Hollywood-Grade Storytelling for Brands",
     content: {
       intro: "We are a full-scale production house equipped with state-of-the-art cinematic gear and visionary directors. We don't just shoot videos; we craft emotional, visually stunning films that captivate audiences.",
@@ -163,8 +164,8 @@ export const servicesData = [
   {
     id: "digital-video-campaigns",
     slug: "digital-video-campaigns",
-    title: "Performance Marketing",
-    shortDescription: "Data-driven ad campaigns that deliver measurable ROI.",
+    title: "Digital Video Campaigns",
+    shortDescription: "High-volume social video campaigns engineered to hook viewers instantly.",
     icon: "VscRecord",
     heroSubtitle: "Stop the Scroll. Drive the Click.",
     content: {
@@ -186,8 +187,8 @@ export const servicesData = [
   {
     id: "outdoor-advertising",
     slug: "outdoor-advertising",
-    title: "Copywriting & Scripting",
-    shortDescription: "Growing communities and building loyal followings, one post at a time.",
+    title: "Outdoor Advertising",
+    shortDescription: "High-impact physical billboard placements and transit takeovers.",
     icon: "VscArchive",
     heroSubtitle: "Own the Streets. Command the Skyline.",
     content: {
@@ -209,9 +210,9 @@ export const servicesData = [
   {
     id: "3d-anamorphic-advertising",
     slug: "3d-anamorphic-advertising",
-    title: "SEO & Content Marketing",
-    shortDescription: "Making sure your brand is found exactly when it matters most.",
-    icon: "VscEye",
+    title: "3D Anamorphic Advertising",
+    shortDescription: "Spectacular forced-perspective animations that pop out of digital screens.",
+    icon: "VscPlayCircle",
     heroSubtitle: "Advertising That Breaks the Screen",
     content: {
       intro: "Create a spectacle that the world can't help but share. 3D Anamorphic Advertising uses forced perspective to create the illusion that objects are leaping out of digital billboards into the real world.",
@@ -233,7 +234,7 @@ export const servicesData = [
     id: "social-media-management",
     slug: "social-media-management",
     title: "Social Media Management",
-    shortDescription: "Words that persuade, sell, and tell a compelling story.",
+    shortDescription: "Strategic content calendars, community engagement, and premium feed layouts.",
     icon: "VscHeart",
     heroSubtitle: "Build a Cult Following",
     content: {
@@ -255,8 +256,8 @@ export const servicesData = [
   {
     id: "meta-google-ads",
     slug: "meta-google-ads",
-    title: "3D & CGI Production",
-    shortDescription: "Pushing the boundaries of reality with mind-bending visuals.",
+    title: "Meta & Google Ads",
+    shortDescription: "Data-driven media buying and ad campaigns optimized for return on ad spend.",
     icon: "VscGraphLine",
     heroSubtitle: "Turn Ad Spend into Predictable Revenue",
     content: {
@@ -278,8 +279,8 @@ export const servicesData = [
   {
     id: "website-design-development",
     slug: "website-design-development",
-    title: "Photography & Art Direction",
-    shortDescription: "Capturing the essence of your brand through a powerful lens.",
+    title: "Website Design & Development",
+    shortDescription: "Bespoke high-performance websites optimized for page speed and conversion.",
     icon: "VscCode",
     heroSubtitle: "Your Digital Flagship Store",
     content: {
@@ -301,8 +302,8 @@ export const servicesData = [
   {
     id: "seo",
     slug: "seo",
-    title: "Corporate Filmmaking",
-    shortDescription: "Professional, high-quality videos that communicate your brand's authority.",
+    title: "SEO",
+    shortDescription: "Technical page optimization and content clusters to rank higher organically.",
     icon: "VscSearch",
     heroSubtitle: "Own the First Page",
     content: {
@@ -324,8 +325,8 @@ export const servicesData = [
   {
     id: "promotional-videos",
     slug: "promotional-videos",
-    title: "Outdoor Advertising (OOH)",
-    shortDescription: "Dominating physical spaces with unmissable campaigns.",
+    title: "Promotional Videos",
+    shortDescription: "High-energy promo videos to build hype and showcase specific products.",
     icon: "VscDeviceCamera",
     heroSubtitle: "Hype Your Next Big Thing",
     content: {
@@ -347,8 +348,8 @@ export const servicesData = [
   {
     id: "billboards-smds",
     slug: "billboards-smds",
-    title: "PR & Media Outreach",
-    shortDescription: "Getting your story in front of the right eyes and the biggest publishers.",
+    title: "Billboards & SMDs",
+    shortDescription: "Outdoor display mockups and digital SMD screen loop designs.",
     icon: "VscCreditCard",
     heroSubtitle: "Supersize Your Brand",
     content: {
@@ -365,6 +366,307 @@ export const servicesData = [
       { step: "02", title: "High-Res Production", description: "Creating ultra-high-resolution graphics suitable for massive physical printing." },
       { step: "03", title: "Digital Adaptation", description: "Creating motion loops for digital LED screens." },
       { step: "04", title: "Media Buying", description: "Negotiating and securing the best billboard locations for your budget." }
+    ]
+  },
+
+  // --- New Additions (Set B) ---
+  {
+    id: "branding-identity",
+    slug: "branding-identity",
+    title: "Branding & Identity",
+    shortDescription: "Cohesive visual identities, premium brand positioning, and comprehensive guidelines.",
+    icon: "VscLayout",
+    heroSubtitle: "Define Your Legacy",
+    content: {
+      intro: "Your brand is more than a logo; it's the gut feeling people have when they interact with your business. We build iconic, cohesive brand identities that instantly communicate your value and position you as a premium leader in your industry.",
+      body: "Our branding process is rooted in deep market psychology. We develop comprehensive brand guidelines, typography systems, color palettes, and motion languages. From the digital experience to physical packaging, we ensure every touchpoint feels distinctly, unmistakably YOU."
+    },
+    benefits: [
+      { title: "Premium Positioning", description: "Look like the market leader, allowing you to command higher pricing." },
+      { title: "Instant Recognition", description: "A cohesive visual language that makes your brand instantly identifiable." },
+      { title: "Built to Scale", description: "Comprehensive guidelines that ensure consistency as your company grows." }
+    ],
+    process: [
+      { step: "01", title: "Brand Archetyping", description: "Discovering the core personality and voice of your company." },
+      { step: "02", title: "Visual Exploration", description: "Developing mood boards, logos, and color psychologies." },
+      { step: "03", title: "Systemization", description: "Creating rules for typography, spacing, and motion." },
+      { step: "04", title: "Rollout", description: "Applying the new identity to all digital and physical assets." }
+    ]
+  },
+  {
+    id: "creative-strategy",
+    slug: "creative-strategy",
+    title: "Creative Strategy",
+    shortDescription: "The roadmap to your brand's next big breakthrough, blending data and imagination.",
+    icon: "VscOrganization",
+    heroSubtitle: "Data-Driven Strategy Meets Limitless Creativity",
+    content: {
+      intro: "A great campaign begins with a bulletproof strategy. We partner with ambitious brands to map out high-impact creative strategies that target your demographic and establish market dominance.",
+      body: "We audit your competition, analyze customer behavior, and discover the unique story angles that make your brand stand out. We construct detailed content roadmaps, campaign positioning, and distribution strategies designed to make your budget work as hard as possible."
+    },
+    benefits: [
+      { title: "Unified Message", description: "Aligning all platforms with one clear, cohesive concept." },
+      { title: "Competitive Edge", description: "Positioning your brand differently to stand out in crowded industries." },
+      { title: "Strategic Precision", description: "Eliminating guesswork by launching creatives backed by consumer research." }
+    ],
+    process: [
+      { step: "01", title: "Discovery & Audit", description: "Analyzing current brand standing, audience behavior, and competitors." },
+      { step: "02", title: "Core Concepting", description: "Brainstorming and defining the primary creative hooks." },
+      { step: "03", title: "Campaign Mapping", description: "Structuring a multi-channel roadmap with key assets defined." },
+      { step: "04", title: "Scale Planning", description: "Setting budget distribution frameworks for optimal reach and ROI." }
+    ]
+  },
+  {
+    id: "content-production",
+    slug: "content-production",
+    title: "Content Production",
+    shortDescription: "Cinematic, scroll-stopping digital content tailored to modern media platforms.",
+    icon: "VscPlayCircle",
+    heroSubtitle: "Cinematic Storytelling for Modern Audiences",
+    content: {
+      intro: "Capture attention where it matters. We design, write, shoot, and produce premium digital content that stops the scroll and starts real conversations around your brand.",
+      body: "From high-quality social reels and kinetic graphics to custom product displays, our content production team focuses on authenticity, rapid delivery, and creative relevance. We create high-engagement digital assets that elevate your brand's authority."
+    },
+    benefits: [
+      { title: "Scroll-Stopping Hook", description: "Engineered specifically to capture visual attention in under two seconds." },
+      { title: "High Relevance", description: "Content kept in sync with current platform trends and internet culture." },
+      { title: "Endless Versatility", description: "Assets sized and styled dynamically for multiple digital distribution channels." }
+    ],
+    process: [
+      { step: "01", title: "Concept & Scripting", description: "Writing punchy scripts and mapping out visual storyboards." },
+      { step: "02", title: "Creative Shoot", description: "Capturing clean, high-definition raw assets in-house." },
+      { step: "03", title: "Dynamic Editing", description: "Adding fast cuts, visual effects, and customized animations." },
+      { step: "04", title: "Multi-Format Export", description: "Formatting final files for all major social and web platforms." }
+    ]
+  },
+  {
+    id: "ui-ux",
+    slug: "ui-ux",
+    title: "UI/UX",
+    shortDescription: "Digital interfaces designed for intuitive navigation, aesthetic beauty, and user conversion.",
+    icon: "VscSymbolColor",
+    heroSubtitle: "Where Intuitive Design Meets Brand Identity",
+    content: {
+      intro: "A premium website or application must be as easy to navigate as it is beautiful to look at. Our UI/UX design team designs seamless digital interfaces built around user psychology and behavioral conversion.",
+      body: "We map out user journeys, build interactive wireframes, and design high-fidelity layouts. From micro-interactions and glassmorphism elements to color hierarchy, we ensure your user interface feels fluid and guides the user naturally toward conversions."
+    },
+    benefits: [
+      { title: "Lower Bounce Rates", description: "Intuitive flows that keep users engaged and decrease site exits." },
+      { title: "Boosted Conversions", description: "Staged layouts designed specifically to optimize signups, inquiries, and sales." },
+      { title: "Bespoke Mockups", description: "100% custom UI designs tailored exactly to your brand guidelines." }
+    ],
+    process: [
+      { step: "01", title: "Research & Journey", description: "Defining user personas and structuring the navigation flow." },
+      { step: "02", title: "Wireframing", description: "Building layout blueprints without visual distractions." },
+      { step: "03", title: "UI Staging", description: "Applying branding elements, typography, and interactive components." },
+      { step: "04", title: "Prototyping", description: "Creating clickable prototypes to validate transitions and micro-animations." }
+    ]
+  },
+  {
+    id: "web-dev",
+    slug: "web-dev",
+    title: "Web Development",
+    shortDescription: "Bespoke React/Next.js websites featuring fluid animations, clean code, and fast page loads.",
+    icon: "VscCode",
+    heroSubtitle: "Your Digital Flagship Store",
+    content: {
+      intro: "Your website is the final destination for all your marketing efforts. If it's slow or confusing, you lose the sale. We build blazingly fast, stunningly beautiful websites optimized for maximum conversion.",
+      body: "Using modern frameworks like Next.js and React, we create bespoke digital experiences featuring smooth scroll animations, glassmorphism UI, and flawless mobile responsiveness. We don't use templates; we engineer digital masterpieces."
+    },
+    benefits: [
+      { title: "Blazing Fast Speeds", description: "Modern architectures that load instantly, preventing bounce rates." },
+      { title: "Bespoke Animations", description: "Premium micro-interactions that make the site feel alive and engaging." },
+      { title: "Conversion Optimized", description: "UX/UI designed specifically to guide the user to checkout or contact." }
+    ],
+    process: [
+      { step: "01", title: "UX Wireframing", description: "Mapping out the user journey and structural flow of the site." },
+      { step: "02", title: "UI Design", description: "Creating pixel-perfect, high-fidelity mockups of the final design." },
+      { step: "03", title: "Development", description: "Coding the site using cutting-edge, scalable modern web technologies." },
+      { step: "04", title: "Launch & QA", description: "Rigorous testing across all devices and browsers before going live." }
+    ]
+  },
+  {
+    id: "app-dev",
+    slug: "app-dev",
+    title: "App Development",
+    shortDescription: "Custom iOS and Android applications engineered for fluid performance and scale.",
+    icon: "VscRecord",
+    heroSubtitle: "Your Brand, Directly in Their Pocket",
+    content: {
+      intro: "A mobile application is the ultimate tool for customer retention. We design and build native-quality mobile apps with smooth navigation, offline capability, and high-performance backend systems.",
+      body: "Whether it's a customer portal, an interactive catalog, or a utility tool, we develop custom mobile experiences for iOS and Android. We handle everything from the initial product strategy and API architecture to deployment on the App Store and Google Play."
+    },
+    benefits: [
+      { title: "Native Experience", description: "Fluid animations and swift load times optimized for modern mobile devices." },
+      { title: "Direct Retention", description: "Send push notifications directly to users to keep engagement high." },
+      { title: "Robust Security", description: "Engineered with modern authentication and clean API integrations." }
+    ],
+    process: [
+      { step: "01", title: "Product Scope", description: "Defining core app features and outlining database architecture." },
+      { step: "02", title: "UI/UX Design", description: "Creating interactive mobile screen layouts and flow maps." },
+      { step: "03", title: "Core Development", description: "Writing clean, scalable code for both frontend and backend." },
+      { step: "04", title: "Deployment", description: "Managing app submissions, listing assets, and launching live." }
+    ]
+  },
+  {
+    id: "e-commerce-solutions",
+    slug: "e-commerce-solutions",
+    title: "E Commerce Solutions",
+    shortDescription: "Custom online storefronts optimized for high conversion rates and seamless checkout.",
+    icon: "VscCreditCard",
+    heroSubtitle: "A Seamless Conversion Engine",
+    content: {
+      intro: "Turn your online store into a conversion machine. We build beautiful, high-performing e-commerce storefronts on Shopify, Next.js, and custom headless platforms designed to drive sales.",
+      body: "We optimize product grids, streamline checkout funnels, and build smart cart systems. We integrate payment processors, handle complex inventory syncs, and structure headless architectures to ensure your shop loads instantly, even during heavy traffic spikes."
+    },
+    benefits: [
+      { title: "Frictionless Checkout", description: "Streamlined steps that minimize cart abandonment and boost conversions." },
+      { title: "Headless Speeds", description: "Custom tech stacks that load catalogs instantly for better SEO and sales." },
+      { title: "Inventory Syncing", description: "Automatic updates across channels for straightforward product management." }
+    ],
+    process: [
+      { step: "01", title: "Audit & Architecture", description: "Reviewing product collections and planning the database structures." },
+      { step: "02", title: "Conversion UX", description: "Designing intuitive cart flyouts, product galleries, and filters." },
+      { step: "03", title: "Platform Dev", description: "Coding the storefront and configuring secure backend pipelines." },
+      { step: "04", title: "Payment Integration", description: "Setting up secure gateways, tax calculations, and shipping rules." }
+    ]
+  },
+  {
+    id: "performance-marketing",
+    slug: "performance-marketing",
+    title: "Performance Marketing",
+    shortDescription: "Aggressive paid campaigns on Meta and Google Ads optimized for maximum return on ad spend.",
+    icon: "VscGraphLine",
+    heroSubtitle: "Turn Ad Spend into Predictable Revenue",
+    content: {
+      intro: "Stop guessing and start scaling. Our performance marketing team leverages advanced machine learning and deep data analytics to dominate Meta (Facebook/Instagram) and Google Ads platforms.",
+      body: "We combine our elite in-house creative (videos and CGI) with aggressive, data-driven media buying. We constantly A/B test audiences, ad copies, and creatives to lower your Customer Acquisition Cost and scale your campaigns profitably."
+    },
+    benefits: [
+      { title: "Predictable Growth", description: "Turn your marketing into a reliable machine: put $1 in, get $3 out." },
+      { title: "Advanced Tracking", description: "Flawless pixel implementation and server-side tracking to capture every conversion." },
+      { title: "Creative Synergy", description: "Our media buyers sit next to our video editors, ensuring rapid creative iteration." }
+    ],
+    process: [
+      { step: "01", title: "Tracking Setup", description: "Installing pixels, API conversions, and ensuring data is 100% accurate." },
+      { step: "02", title: "Campaign Architecture", description: "Structuring cold, warm, and retargeting campaigns for maximum efficiency." },
+      { step: "03", title: "Creative Testing", description: "Launching dozens of ad variations to find the winning hooks." },
+      { step: "04", title: "Scaling", description: "Aggressively increasing budget on winning ads while maintaining ROI." }
+    ]
+  },
+  {
+    id: "seo-content-marketing",
+    slug: "seo-content-marketing",
+    title: "SEO & Content Marketing",
+    shortDescription: "Rank on Page 1 of Google and generate highly qualified, free organic traffic.",
+    icon: "VscSearch",
+    heroSubtitle: "Own the First Page",
+    content: {
+      intro: "Be there exactly when they are searching for you. Our technical and content-driven SEO strategies push your brand to the top of Google, creating a steady stream of highly qualified, free organic traffic.",
+      body: "We go far beyond basic keywords. We optimize your site's technical architecture for speed and crawlability, build high-authority backlinks, and create comprehensive content clusters that establish your brand as the undisputed authority in your niche."
+    },
+    benefits: [
+      { title: "Long-Term ROI", description: "Unlike paid ads, organic traffic continues to flow long after the work is done." },
+      { title: "High-Intent Leads", description: "Capture customers who are actively searching for exactly what you sell." },
+      { title: "Brand Authority", description: "Ranking #1 instills immediate trust and credibility in the consumer's mind." }
+    ],
+    process: [
+      { step: "01", title: "Technical Audit", description: "Fixing site speed, mobile usability, and indexation issues." },
+      { step: "02", title: "Keyword Strategy", description: "Identifying high-volume, high-intent search terms to target." },
+      { step: "03", title: "Content Creation", description: "Writing optimized, authoritative articles and landing pages." },
+      { step: "04", title: "Link Building", description: "Acquiring high-quality backlinks to boost your domain authority." }
+    ]
+  },
+  {
+    id: "3d-cgi-production",
+    slug: "3d-cgi-production",
+    title: "3D and CGI Production",
+    shortDescription: "Spectacular CGI campaigns, hyper-realistic renders, and physics-defying visual animations.",
+    icon: "VscEye",
+    heroSubtitle: "Transform the Impossible into the Unforgettable",
+    content: {
+      intro: "In a world saturated with standard photography, 3D & CGI Production breaks through the noise. We create photorealistic, physics-defying campaigns that stop scrollers in their tracks and burn your brand into their memory.",
+      body: "Our team of elite 3D artists and animators meticulously craft every pixel, lighting setup, and material to ensure your product looks more stunning than real life. From impossible environments to hyper-detailed closeups, we build worlds that perfectly align with your brand's vision without the limitations of traditional shoots."
+    },
+    benefits: [
+      { title: "No Physical Limits", description: "If you can imagine it, we can build it. No location scouting, no weather delays." },
+      { title: "Pixel-Perfect Control", description: "Absolute control over lighting, angles, and environment for the perfect shot." },
+      { title: "Future-Proof Assets", description: "Reuse and re-render your 3D assets for future campaigns and different mediums." }
+    ],
+    process: [
+      { step: "01", title: "Concept & Storyboarding", description: "We outline the visual narrative and establish the creative direction." },
+      { step: "02", title: "3D Modeling", description: "Crafting the digital assets with meticulous attention to detail." },
+      { step: "03", title: "Lighting & Texturing", description: "Applying hyper-realistic materials and cinematic lighting." },
+      { step: "04", title: "Rendering & Compositing", description: "Generating the final masterpiece ready for deployment." }
+    ]
+  },
+  {
+    id: "photography-art-direction",
+    slug: "photography-art-direction",
+    title: "Photography and Art Direction",
+    shortDescription: "Premium product styling and professional photography that captures brand essence.",
+    icon: "VscDeviceCamera",
+    heroSubtitle: "Capturing Your Brand Story Under the Perfect Light",
+    content: {
+      intro: "A single image should communicate the premium nature of your product. Our studio provides high-end commercial photography, meticulous set design, and professional art direction.",
+      body: "We handle styling, lighting, and composition to produce high-impact lifestyle and studio photography. From casting talent and set styling to color correction and retouching, we deliver assets that elevate your catalogs and digital campaigns."
+    },
+    benefits: [
+      { title: "Meticulous Set Design", description: "Building bespoke physical environments that highlight product styling." },
+      { title: "Hollywood-Grade Lighting", description: "Strategic illumination setups to display exact material textures." },
+      { title: "Flawless Post-Processing", description: "Professional color grading and cleanup for a high-end commercial finish." }
+    ],
+    process: [
+      { step: "01", title: "Art Direction", description: "Aligning mood boards, sets, and casting notes with your brand." },
+      { step: "02", title: "Set Fabrication", description: "Staging the environment with customized styling props." },
+      { step: "03", title: "Studio Shooting", description: "Capturing the assets using premium equipment and dynamic angles." },
+      { step: "04", title: "Master Retouching", description: "Refining colors, shadows, and textures for clean delivery." }
+    ]
+  },
+  {
+    id: "corporate-filmmaking",
+    slug: "corporate-filmmaking",
+    title: "Corporate Filmmaking",
+    shortDescription: "High-quality corporate documentaries and brand films that build authority and trust.",
+    icon: "VscDeviceCameraVideo",
+    heroSubtitle: "Hollywood-Grade Storytelling for Brands",
+    content: {
+      intro: "We are equipped with state-of-the-art cinematic gear and visionary directors. We don't just shoot corporate videos; we craft emotional, visually stunning films that captivate and build trust.",
+      body: "Whether it's a high-impact brand commercial, a sweeping corporate documentary, or a stylized founder story, our production team handles everything from scriptwriting and casting to shooting and world-class color grading. We bring cinematic standards to the business world."
+    },
+    benefits: [
+      { title: "Cinematic Quality", description: "Shot on industry-leading cinema cameras with premium lighting and lenses." },
+      { title: "Turnkey Production", description: "We handle locations, casting, permits, and crew. You just enjoy the result." },
+      { title: "Masterful Post-Production", description: "Elite editing, sound design, and color grading for a polished masterpiece." }
+    ],
+    process: [
+      { step: "01", title: "Pre-Production", description: "Scripting, storyboarding, location scouting, and casting." },
+      { step: "02", title: "Principal Photography", description: "Executing the shoot with our expert directors and cinematographers." },
+      { step: "03", title: "Editing & VFX", description: "Piecing the story together and adding seamless visual effects." },
+      { step: "04", title: "Color & Sound", description: "The final polish: cinematic color grading and immersive sound design." }
+    ]
+  },
+  {
+    id: "pr-media-outreach",
+    slug: "pr-media-outreach",
+    title: "PR and Media Outreach",
+    shortDescription: "Craft compelling press releases and manage media outreach to get featured in top publishers.",
+    icon: "VscMegaphone",
+    heroSubtitle: "Get Heard. Build Authority.",
+    content: {
+      intro: "Get featured on top digital publications and build immediate industry authority. We craft strategic press campaigns and build relationships with editors to showcase your brand in the media.",
+      body: "We structure press angles, draft compelling stories, and manage direct pitches to journalists and publishers. The resulting media placements drive trust, organic awareness, and generate high-quality backlinks that boost your domain rating."
+    },
+    benefits: [
+      { title: "Instant Trust", description: "Being featured on trusted news sites and journals gives immediate authority." },
+      { title: "SEO Backlinks", description: "Secure high-authority mentions that elevate your organic search rankings." },
+      { title: "Viral Potential", description: "Well-placed articles get shared, generating organic word-of-mouth visibility." }
+    ],
+    process: [
+      { step: "01", title: "Angle Ideation", description: "Finding the newsworthy angle of your brand milestones or launches." },
+      { step: "02", title: "PR Drafting", description: "Writing structured, compelling press releases ready for editor review." },
+      { step: "03", title: "Outreach & Pitching", description: "Reaching out directly to targeted journalists and media outlets." },
+      { step: "04", title: "Coverage Tracking", description: "Monitoring press pickups and providing media value reports." }
     ]
   }
 ];
