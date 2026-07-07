@@ -41,11 +41,21 @@ export default function Contact() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    
     if (name === "phone") {
-      const phoneVal = value.replace(/[^0-9+]/g, "");
+      // Only allow up to 10 digits
+      const phoneVal = value.replace(/[^0-9]/g, "").slice(0, 10);
       setFormData((prev) => ({ ...prev, [name]: phoneVal }));
       return;
     }
+    
+    if (name === "fullName" || name === "companyName") {
+      // Only allow letters and spaces
+      const textVal = value.replace(/[^a-zA-Z\s]/g, "");
+      setFormData((prev) => ({ ...prev, [name]: textVal }));
+      return;
+    }
+    
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -143,6 +153,7 @@ export default function Contact() {
                     type="text" 
                     name="fullName"
                     required
+                    maxLength={50}
                     value={formData.fullName}
                     onChange={handleInputChange}
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
@@ -158,6 +169,7 @@ export default function Contact() {
                     type="text" 
                     name="companyName"
                     required
+                    maxLength={50}
                     value={formData.companyName}
                     onChange={handleInputChange}
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
@@ -175,6 +187,7 @@ export default function Contact() {
                     type="email" 
                     name="email"
                     required
+                    maxLength={100}
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
@@ -190,6 +203,10 @@ export default function Contact() {
                     type="tel" 
                     name="phone"
                     required
+                    pattern="[0-9]{10}"
+                    maxLength={10}
+                    minLength={10}
+                    title="Phone number must be exactly 10 digits"
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
@@ -206,6 +223,7 @@ export default function Contact() {
                   name="message"
                   required
                   rows="3"
+                  maxLength={500}
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer resize-none"
