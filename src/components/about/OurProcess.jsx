@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 export default function OurProcess() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "/process-banners-2/11.png",
-    "/process-banners-2/12.png",
-    "/process-banners-2/13.png",
-    "/process-banners-2/14.png",
-    "/process-banners-2/15.png"
+    "/teanema-banners/1.png",
+    "/teanema-banners/2.png",
+    "/teanema-banners/3.png",
+    "/teanema-banners/4.png",
+    "/teanema-banners/5.png"
   ];
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function OurProcess() {
               key={index}
               src={src}
               alt={`Process Banner ${index + 1}`}
-              className={`absolute inset-0 w-full h-full object-cover md:object-contain transition-opacity duration-1000 ease-in-out ${
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
                 index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
             />
