@@ -17,15 +17,15 @@ export default function OurStory() {
     },
     {
       number: "150+",
-      title: "Brands Scaled",
-      description: "From ambitious local startups to global enterprise leaders, we expanded our footprint rapidly, turning clicks into real, measurable revenue across multiple industries.",
+      title: "Brands Scaled- Brands We've Empowered",
+      description: "From emerging startups to established businesses, we've partnered with brands across industries to craft stories, build stronger identities, and create marketing that delivers meaningful growth.",
       colorClass: "text-[#0062BE]",
       accentBg: "bg-[#0062BE]/10"
     },
     {
       number: "45+",
-      title: "Experts Today",
-      description: "We are now a full-stack powerhouse of brilliant strategists, creatives, and data scientists dedicated to pushing boundaries and architecting growth every single day.",
+      title: "Experts Today–The Minds Behind the Magic",
+      description: "A passionate team of strategists, storytellers, designers, filmmakers, and marketers working together to brew bold ideas into unforgettable brand experiences.",
       colorClass: "text-[#10B981]",
       accentBg: "bg-[#10B981]/10"
     }

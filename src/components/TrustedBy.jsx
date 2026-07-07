@@ -532,9 +532,6 @@ export default function TrustedBy() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-[#F27224] text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-4">
-            Client Section
-          </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-display text-[#3E2723] tracking-tight mb-6">
             Every Frame Tells a Different Story.
           </h2>

@@ -267,8 +267,8 @@ export default function Hero() {
                     Dominate Your Market.
                   </span>
                 </h1>
-                <p className="text-lg text-slate-650 font-normal leading-relaxed max-w-md mt-2 font-serif italic text-slate-500">
-                  Every Brand Has a Story. We Make Yours Worth Watching. From the first sip of an idea to the final standing ovation, we create brands people remember.
+                <p className="text-lg font-normal leading-relaxed max-w-md mt-2 font-serif italic text-black">
+                  <span className="text-[#F27224]">Every Brand Has a Story.</span> We Make Yours Worth Watching. From the first sip of an idea to the final standing ovation, we create brands people remember.
                 </p>
                 <div className="mt-4 flex items-center gap-2">
                   <span className="relative flex h-2 w-2">

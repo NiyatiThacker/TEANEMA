@@ -25,6 +25,7 @@ export default function Navbar() {
   ];
 
   const serviceItems = [
+    // --- Original 16 Services (Set A) ---
     { name: "CGI Advertising", href: "/services/cgi-advertising" },
     { name: "CGI Product Advertising", href: "/services/cgi-product-advertising" },
     { name: "Real Estate Marketing", href: "/services/real-estate-marketing" },
@@ -41,6 +42,21 @@ export default function Navbar() {
     { name: "SEO", href: "/services/seo" },
     { name: "Promotional Videos", href: "/services/promotional-videos" },
     { name: "Billboards & SMDs", href: "/services/billboards-smds" },
+
+    // --- New Additions (Set B) ---
+    { name: "Branding & Identity", href: "/services/branding-identity" },
+    { name: "Creative Strategy", href: "/services/creative-strategy" },
+    { name: "Content Production", href: "/services/content-production" },
+    { name: "UI/UX", href: "/services/ui-ux" },
+    { name: "Web Development", href: "/services/web-dev" },
+    { name: "App Development", href: "/services/app-dev" },
+    { name: "E Commerce Solutions", href: "/services/e-commerce-solutions" },
+    { name: "Performance Marketing", href: "/services/performance-marketing" },
+    { name: "SEO & Content Marketing", href: "/services/seo-content-marketing" },
+    { name: "3D and CGI Production", href: "/services/3d-cgi-production" },
+    { name: "Photography and Art Direction", href: "/services/photography-art-direction" },
+    { name: "Corporate Filmmaking", href: "/services/corporate-filmmaking" },
+    { name: "PR and Media Outreach", href: "/services/pr-media-outreach" }
   ];
 
   // Scroll listener (checks for scroll direction and video overlay)
@@ -372,7 +388,7 @@ export default function Navbar() {
                   </div>
                   <div
                     className={`flex flex-col gap-1.5 pl-4 border-l border-slate-100 transition-all duration-300 origin-top overflow-hidden ${
-                      isMobileDropdownOpen ? "max-h-[600px] opacity-100 py-2" : "max-h-0 opacity-0 pointer-events-none"
+                      isMobileDropdownOpen ? "max-h-[1200px] opacity-100 py-2" : "max-h-0 opacity-0 pointer-events-none"
                     }`}
                   >
                     {serviceItems.map((item) => (
