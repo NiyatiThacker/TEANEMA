@@ -159,7 +159,7 @@ export default function Contact() {
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
-                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
+                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-[:not(:placeholder-shown)]:-top-5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-slate-400 peer-[:not(:placeholder-shown)]:font-bold">
                     Full Name
                   </label>
                 </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
-                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
+                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-[:not(:placeholder-shown)]:-top-5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-slate-400 peer-[:not(:placeholder-shown)]:font-bold">
                     Company Name
                   </label>
                 </div>
@@ -193,7 +193,7 @@ export default function Contact() {
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
-                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
+                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-[:not(:placeholder-shown)]:-top-5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-slate-400 peer-[:not(:placeholder-shown)]:font-bold">
                     Email Address
                   </label>
                 </div>
@@ -212,7 +212,7 @@ export default function Contact() {
                     className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer"
                     placeholder=" "
                   />
-                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
+                  <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-[:not(:placeholder-shown)]:-top-5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-slate-400 peer-[:not(:placeholder-shown)]:font-bold">
                     Phone Number
                   </label>
                 </div>
@@ -229,7 +229,7 @@ export default function Contact() {
                   className="w-full bg-transparent border-b-2 border-slate-300/60 focus:border-[#F27224] py-3 text-lg outline-none text-[#3E2723] transition-colors peer resize-none"
                   placeholder=" "
                 />
-                <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-valid:-top-5 peer-valid:text-xs peer-valid:text-slate-400 peer-valid:font-bold">
+                <label className="absolute left-0 top-3 text-slate-400 text-lg pointer-events-none transition-all duration-300 peer-focus:-top-5 peer-focus:text-xs peer-focus:text-[#F27224] peer-focus:font-bold peer-[:not(:placeholder-shown)]:-top-5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-slate-400 peer-[:not(:placeholder-shown)]:font-bold">
                   What are your goals?
                 </label>
               </div>
