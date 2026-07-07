@@ -107,7 +107,7 @@ export default function Contact() {
     <section 
       id="contact" 
       ref={sectionRef}
-      className={`py-24 md:py-40 bg-[#f8fafc] relative overflow-hidden z-10 border-b border-slate-100 transition-all duration-1000 ${
+      className={`py-24 md:py-32 bg-[#f8fafc] relative overflow-hidden z-10 border-b border-slate-100 transition-all duration-1000 scroll-mt-24 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -125,52 +125,79 @@ export default function Contact() {
         style={{ background: "radial-gradient(circle, #10B981 0%, transparent 70%)", animationDuration: '12s' }} 
       />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        
+        {/* Story & Values Section */}
+        <div 
+          className={`mb-20 md:mb-28 transition-all duration-1000 transform ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+          }`}
+        >
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-[#3E2723] mb-4">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F27224] to-[#e05a0a]">Story & Values</span>
+            </h2>
+            <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+              The foundation of everything we create.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            {/* Mission */}
+            <div className="bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+              <h3 className="text-2xl font-bold font-display text-[#0062BE] mb-4 flex items-center gap-3">
+                <span className="w-10 h-10 rounded-full bg-[#0062BE]/10 flex items-center justify-center text-[#0062BE]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                </span>
+                Mission
+              </h3>
+              <p className="text-slate-600 leading-relaxed font-medium text-[1.05rem]">
+                "To help brands break out of the noise and find their spotlight through strategic storytelling and cinematic execution."
+              </p>
+            </div>
+
+            {/* Vision */}
+            <div className="bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+              <h3 className="text-2xl font-bold font-display text-[#10B981] mb-4 flex items-center gap-3">
+                <span className="w-10 h-10 rounded-full bg-[#10B981]/10 flex items-center justify-center text-[#10B981]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                </span>
+                Vision
+              </h3>
+              <p className="text-slate-600 leading-relaxed font-medium text-[1.05rem]">
+                "To be the creative force behind the world's most unforgettable brands, setting new standards for digital marketing and production."
+              </p>
+            </div>
+
+            {/* Core Values */}
+            <div className="bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+              <h3 className="text-2xl font-bold font-display text-[#F27224] mb-5 flex items-center gap-3">
+                <span className="w-10 h-10 rounded-full bg-[#F27224]/10 flex items-center justify-center text-[#F27224]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                </span>
+                Core Values
+              </h3>
+              <ul className="space-y-3 text-slate-600 font-medium text-sm">
+                <li className="flex gap-3 items-start"><span className="text-[#F27224] shrink-0 mt-0.5">•</span> <span><strong>Story-First:</strong> Every campaign starts with a meaningful narrative.</span></li>
+                <li className="flex gap-3 items-start"><span className="text-[#0062BE] shrink-0 mt-0.5">•</span> <span><strong>Quality Without Compromise:</strong> We treat every project like a masterpiece.</span></li>
+                <li className="flex gap-3 items-start"><span className="text-[#10B981] shrink-0 mt-0.5">•</span> <span><strong>Strategy That Performs:</strong> Beauty meets logic to deliver measurable results.</span></li>
+                <li className="flex gap-3 items-start"><span className="text-[#F27224] shrink-0 mt-0.5">•</span> <span><strong>Unapologetic Creativity:</strong> We dare to be different, so our clients can stand out.</span></li>
+                <li className="flex gap-3 items-start"><span className="text-[#0062BE] shrink-0 mt-0.5">•</span> <span><strong>Transparent Collaboration:</strong> Open communication and honest partnerships.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         {/* Floating Glass Bento Box */}
         <div 
           className={`w-full backdrop-blur-[40px] bg-white/50 border border-white/80 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.08)] rounded-[3rem] p-8 md:p-16 lg:p-20 flex flex-col lg:flex-row gap-16 lg:gap-24 relative overflow-hidden transition-all duration-1000 transform ${
-            isVisible ? "translate-y-0" : "translate-y-12"
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
           }`}
+          style={{ transitionDelay: '300ms' }}
         >
           {/* Subtle inner reflection line */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-80" />
 
-          {/* Left Side: Form and Mission/Vision */}
-          <div className="flex-1 flex flex-col">
-            {/* Mission, Vision & Core Values Section */}
-            <div className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold font-display text-[#3E2723] mb-6">
-                Our <span style={{ color: "#F27224" }}>Story & Values</span>
-              </h2>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-bold font-display text-[#0062BE] mb-2">Mission</h3>
-                  <p className="text-slate-600 leading-relaxed font-medium">
-                    "To help brands break out of the noise and find their spotlight through strategic storytelling and cinematic execution."
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-display text-[#10B981] mb-2">Vision</h3>
-                  <p className="text-slate-600 leading-relaxed font-medium">
-                    "To be the creative force behind the world's most unforgettable brands, setting new standards for digital marketing and production."
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-display text-[#F27224] mb-3">Core Values</h3>
-                  <ul className="space-y-3 text-slate-600 font-medium">
-                    <li className="flex gap-3"><span className="text-[#F27224]">•</span> <span><strong>Story-First Approach:</strong> Every campaign starts with a meaningful narrative.</span></li>
-                    <li className="flex gap-3"><span className="text-[#0062BE]">•</span> <span><strong>Quality Without Compromise:</strong> We treat every project like a masterpiece.</span></li>
-                    <li className="flex gap-3"><span className="text-[#10B981]">•</span> <span><strong>Strategy That Performs:</strong> Beauty meets logic to deliver measurable results.</span></li>
-                    <li className="flex gap-3"><span className="text-[#F27224]">•</span> <span><strong>Unapologetic Creativity:</strong> We dare to be different, so our clients can stand out.</span></li>
-                    <li className="flex gap-3"><span className="text-[#0062BE]">•</span> <span><strong>Transparent Collaboration:</strong> Open communication and honest partnerships from start to finish.</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <hr className="border-slate-200 my-8" />
-
+          {/* Left Side: Form */}
+          <div className="flex-1">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-[#3E2723] tracking-tight leading-tight mb-4">
               Ready to <span style={{ color: "#F27224" }}>scale?</span>
             </h2>
