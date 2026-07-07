@@ -229,7 +229,7 @@ export default function Contact() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-2">Direct Contact</h3>
             
             {/* Bento Card 1: Email */}
-            <a href="mailto:hello@yourbrand.com" className="bg-white/60 hover:bg-white transition-colors duration-300 backdrop-blur-md rounded-3xl p-6 border border-white shadow-sm flex items-start gap-5 group">
+            <a href="mailto:sbsfin27@gmail.com" className="bg-white/60 hover:bg-white transition-colors duration-300 backdrop-blur-md rounded-3xl p-6 border border-white shadow-sm flex items-start gap-5 group">
               <div className="w-12 h-12 rounded-2xl bg-[#0062BE]/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                 <svg className="w-5 h-5 text-[#0062BE]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -237,12 +237,12 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-[#3E2723] font-bold font-display text-xl mb-1">Email Us</h4>
-                <p className="text-slate-500 text-sm">hello@yourbrand.com</p>
+                <p className="text-slate-500 text-sm">sbsfin27@gmail.com</p>
               </div>
             </a>
 
             {/* Bento Card 2: Phone */}
-            <a href="tel:+919876543210" className="bg-white/60 hover:bg-white transition-colors duration-300 backdrop-blur-md rounded-3xl p-6 border border-white shadow-sm flex items-start gap-5 group">
+            <a href="tel:+919081353523" className="bg-white/60 hover:bg-white transition-colors duration-300 backdrop-blur-md rounded-3xl p-6 border border-white shadow-sm flex items-start gap-5 group">
               <div className="w-12 h-12 rounded-2xl bg-[#10B981]/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                 <svg className="w-5 h-5 text-[#10B981]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -250,7 +250,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-[#3E2723] font-bold font-display text-xl mb-1">Call Us</h4>
-                <p className="text-slate-500 text-sm">+91 XXXXX XXXXX</p>
+                <p className="text-slate-500 text-sm">+91 90813 53523</p>
               </div>
             </a>
 
