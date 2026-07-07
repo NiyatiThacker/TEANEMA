@@ -264,7 +264,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-[#3E2723] font-bold font-display text-xl mb-1">Our Office</h4>
-                <p className="text-slate-500 text-sm leading-relaxed">Ahmedabad, Gujarat, India<br/>Mon-Sat, 10 AM – 7 PM</p>
+                <p className="text-slate-500 text-sm leading-relaxed">1003, Span Trade Centre, Paldi<br/>Ahmedabad, Gujarat, India</p>
               </div>
             </div>
 
