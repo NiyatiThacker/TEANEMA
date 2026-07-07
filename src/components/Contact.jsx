@@ -49,11 +49,28 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormStatus("sending");
 
-    setTimeout(() => {
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcsYAotasvuHXVXUowjp-3flvwJCuTE2dkTBVnTBFqy68ozsXcRsYiPVn3PrG6Xwrb/exec";
+
+    // Format data as FormData to prevent CORS preflight issues with Google Apps Script
+    const data = new FormData();
+    data.append("fullName", formData.fullName);
+    data.append("companyName", formData.companyName);
+    data.append("email", formData.email);
+    data.append("phone", formData.phone);
+    data.append("message", formData.message);
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        body: data,
+        mode: "no-cors", // Opaque response, but succeeds in posting data
+      });
+
+      // Show success animation
       setFormStatus("success");
       setFormData({
         fullName: "",
@@ -62,11 +79,17 @@ export default function Contact() {
         phone: "",
         message: "",
       });
-      
+
+      // Reset button to idle after 5 seconds
       setTimeout(() => {
         setFormStatus("idle");
       }, 5000);
-    }, 1500);
+
+    } catch (error) {
+      console.error("Submission failed:", error);
+      setFormStatus("idle");
+      alert("Failed to send message. Please try again.");
+    }
   };
 
   return (
