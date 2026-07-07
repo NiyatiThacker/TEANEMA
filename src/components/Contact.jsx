@@ -55,8 +55,9 @@ export default function Contact() {
 
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcsYAotasvuHXVXUowjp-3flvwJCuTE2dkTBVnTBFqy68ozsXcRsYiPVn3PrG6Xwrb/exec";
 
-    // Format data as FormData to prevent CORS preflight issues with Google Apps Script
-    const data = new FormData();
+    // Use URLSearchParams to encode as application/x-www-form-urlencoded
+    // Google Apps Script requires this to parse e.parameter correctly!
+    const data = new URLSearchParams();
     data.append("fullName", formData.fullName);
     data.append("companyName", formData.companyName);
     data.append("email", formData.email);
