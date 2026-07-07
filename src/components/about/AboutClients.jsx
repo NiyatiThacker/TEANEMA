@@ -147,10 +147,10 @@ export default function AboutClients() {
           }`}
         >
           <h2 className="text-3xl md:text-4xl font-extrabold font-display text-[#3E2723] tracking-tight mb-4">
-            Brands That Bet on Us (And Won)
+            Brands We've Empowered
           </h2>
-          <p className="text-lg text-slate-600">
-            We're proud to have partnered with businesses of all sizes — from ambitious startups to established industry leaders.
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            From emerging startups to established businesses, we've partnered with brands across industries to craft stories, build stronger identities, and create marketing that delivers meaningful growth.
           </p>
         </div>
 

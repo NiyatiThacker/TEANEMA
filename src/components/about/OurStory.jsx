@@ -10,8 +10,8 @@ export default function OurStory() {
   const tabs = [
     {
       number: "2020",
-      title: "The Beginning",
-      description: "Founded with a simple goal: stop the guesswork and start measuring what matters. We realized the industry needed hard data, not just intuition.",
+      title: "Where the Story Began",
+      description: "What started as a simple idea over a cup of tea evolved into a creative studio where stories are brewed, brands are crafted, and every campaign is directed with purpose.",
       colorClass: "text-[#F27224]",
       accentBg: "bg-[#F27224]/10"
     },
@@ -69,10 +69,10 @@ export default function OurStory() {
         >
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#F27224] mb-4">How It All Kicked Off</p>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold font-display text-[#3E2723] tracking-tight leading-[1.1] mb-8">
-            Built by Marketers Who Were Tired of Guesswork
+            How the First Sip Turned Into a Story
           </h2>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            It all started with a simple frustration — brands were spending money on marketing without knowing what actually worked. What began as a small team solving problems has grown into a full-service agency. Our mission has stayed exactly the same: <strong className="text-[#3E2723] font-semibold">deliver marketing that's measurable, honest, and built for real growth.</strong>
+            Every great story begins with a single idea—and ours started over a cup of tea. TeaNema was built on a simple belief: marketing should never feel ordinary. It should tell stories, spark conversations, and leave a lasting impression. By blending cinematic creativity with strategic thinking, we help brands move beyond being seen to being remembered. <br/><br/> Today, every campaign we create is brewed with purpose, crafted like a film, and designed to deliver results that matter.
           </p>
         </div>
 

@@ -110,7 +110,7 @@ export default function AboutCTA() {
           }`}
         >
           Got a Brand <br className="hidden md:block"/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-400">Worth Talking About?</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-400">Ready to Stand Out?</span>
         </h2>
         
         <p 
@@ -118,7 +118,7 @@ export default function AboutCTA() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          Have a project in mind or just want to say hello? We'd love to hear from you. Tell us about your goals, and let's figure out how to get you there.
+          Whether you're launching, scaling, or reinventing your brand, TeaNema is here to bring your vision to life through creative strategy, impactful storytelling, and result-driven marketing.
         </p>
         
         <div 
@@ -131,7 +131,7 @@ export default function AboutCTA() {
             <div className="group/btn relative inline-flex items-center justify-center px-10 py-5 font-bold text-white bg-[#F27224] rounded-full overflow-hidden transition-all duration-300 shadow-xl shadow-orange-500/20 hover:shadow-[0_10px_40px_rgba(242,114,36,0.3)]">
               <span className="absolute inset-0 bg-[#e05a0a] w-0 group-hover/btn:w-full transition-all duration-300 ease-out z-0" />
               <span className="relative z-10 flex items-center gap-3 text-lg tracking-wide">
-                Start a Conversation
+                Let's Build Your Brand
                 <svg className="w-6 h-6 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -142,7 +142,7 @@ export default function AboutCTA() {
           {/* Magnetic Secondary CTA */}
           <MagneticButton href="#">
             <div className="inline-flex items-center justify-center px-6 py-4 font-bold text-slate-600 hover:text-[#3E2723] transition-colors duration-300 text-lg">
-              Book a Free Strategy Call
+              Talk to Our Team
             </div>
           </MagneticButton>
         </div>

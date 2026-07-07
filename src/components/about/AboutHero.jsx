@@ -27,7 +27,7 @@ export default function AboutHero() {
     }
   };
 
-  const words = "Marketing That Earns Attention, Not Just Impressions.".split(" ");
+  const words = "Every Brand Has a Story. We Make It Worth Watching.".split(" ");
 
   return (
     <section className="relative w-full min-h-[100dvh] md:h-[85vh] md:min-h-[650px] overflow-hidden bg-[#3E2723] flex flex-col md:block pt-[70px] md:pt-24 pb-12 md:pb-16">
@@ -75,7 +75,7 @@ export default function AboutHero() {
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              {word === "Attention," || word === "Impressions." ? (
+              {word.includes("Story.") || word.includes("Watching.") ? (
                 <span className="text-[#F27224]">{word}</span>
               ) : (
                 word
@@ -90,7 +90,7 @@ export default function AboutHero() {
             isMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          From strategy to execution, we help brands build visibility, drive engagement, and turn clicks into customers — across every digital channel that matters.
+          From the first sip of an idea to the final standing ovation, TeaNema blends cinematic storytelling with performance-driven marketing. We don't just create campaigns—we direct experiences that capture attention, build trust, and turn audiences into loyal customers.
         </p>
 
         {/* Service Line */}
@@ -99,7 +99,7 @@ export default function AboutHero() {
             isMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          SEO • Paid Ads • Social Media • Branding • Content • Web Development
+          Creative Strategy • Branding • Content Production • Performance Marketing • Social Media • Web Experiences
         </p>
 
         {/* Magnetic Hover CTA Button */}
@@ -114,7 +114,7 @@ export default function AboutHero() {
             className="group relative inline-flex items-center justify-center px-6 py-3.5 md:px-8 md:py-4 rounded-full bg-[#F27224] text-white font-bold text-base md:text-lg hover:-translate-y-1 transition-all duration-300 shadow-[0_0_20px_rgba(242,114,36,0.3)] hover:shadow-[0_0_30px_rgba(242,114,36,0.6)] overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Let's Build Something Great
+              🎬 Let's Create Your Next Blockbuster
               <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

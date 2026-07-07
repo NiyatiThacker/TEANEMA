@@ -41,34 +41,20 @@ export default function TeamSection() {
             }`}
           >
             <p className="text-sm font-black uppercase tracking-[0.25em] text-[#F27224] mb-4">
-              How We Started
+              Founder
             </p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold font-display text-[#3E2723] tracking-tight leading-[1.1] mb-10">
-              <span className="block mb-1 lg:mb-2">Meet</span>
-              <span className="block text-[#F27224] min-h-[1.2em]">
-                <TextType
-                  text={["The Founder", "The Visionary", "Deep Shah"]}
-                  typingSpeed={75}
-                  pauseDuration={1500}
-                  showCursor={true}
-                  cursorCharacter="|"
-                  loop={true}
-                />
-              </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-display text-[#3E2723] tracking-tight leading-[1.1] mb-10">
+              <span className="block mb-1 lg:mb-2">Meet the Founder</span>
             </h2>
             
             <div className="flex flex-col gap-6 text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+              <h3 className="text-2xl md:text-3xl font-extrabold font-display text-[#3E2723]">The Minds Behind the Magic</h3>
               <p>
-                Established in 2019 by <strong className="text-[#3E2723] font-bold">Deep Shah</strong>,
+                A passionate team of strategists, storytellers, designers, filmmakers, and marketers working together to brew bold ideas into unforgettable brand experiences.
               </p>
+              <div className="w-16 h-px bg-slate-200 my-2" />
               <p>
-                TEANEMA was founded as a digital marketing agency strictly dedicated to elevating ordinary businesses to the stature of highly respected, established brands.
-              </p>
-              <p>
-                Through our collaboration with national and international clients, we have consistently set industry benchmarks, refusing to settle for vanity metrics when real revenue is on the line.
-              </p>
-              <p>
-                Our unwavering commitment to excellence is deeply reflected in our innovative solutions and standardized approach, which collectively drive massive, impactful results for our partners.
+                Teanema was founded with a vision to transform the way brands communicate online. Believing that every business has a unique story worth sharing, our founder built Teanema as a place where creativity, strategy, and storytelling come together to create meaningful digital experiences.
               </p>
             </div>
           </div>

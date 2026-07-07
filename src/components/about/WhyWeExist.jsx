@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { VscChecklist, VscGraphLine, VscLayout, VscFilter } from "react-icons/vsc";
+import { VscChecklist, VscGraphLine, VscLayout, VscFilter, VscHeart, VscDeviceCameraVideo, VscOrganization } from "react-icons/vsc";
 
 export default function WhyWeExist() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,24 +27,34 @@ export default function WhyWeExist() {
 
   const features = [
     {
-      title: "Data-Driven Approach",
-      description: "Every strategy is backed by deep research, analytics, and real performance data — never assumptions.",
+      title: "Brewed, Never Rushed",
+      description: "Every great idea deserves time to develop. We believe in thoughtful strategy before flawless execution.",
+      icon: <VscFilter className="w-8 h-8 md:w-10 md:h-10 text-[#F27224]" />
+    },
+    {
+      title: "Stories Before Strategies",
+      description: "Marketing works best when people feel something. That's why every campaign starts with a story worth telling.",
+      icon: <VscHeart className="w-8 h-8 md:w-10 md:h-10 text-[#0062BE]" />
+    },
+    {
+      title: "Creative Production, End to End",
+      description: "From concept development and cinematic production to branding and digital campaigns, we bring every piece together under one creative roof.",
+      icon: <VscDeviceCameraVideo className="w-8 h-8 md:w-10 md:h-10 text-[#10B981]" />
+    },
+    {
+      title: "Creativity That Performs",
+      description: "Beautiful visuals matter—but meaningful results matter more. We combine creative thinking with strategic execution to help brands grow with purpose.",
       icon: <VscGraphLine className="w-8 h-8 md:w-10 md:h-10 text-[#F27224]" />
     },
     {
-      title: "Transparent Reporting",
-      description: "No jargon, no hidden numbers. You always know exactly where your budget is going and the ROI it generates.",
-      icon: <VscChecklist className="w-8 h-8 md:w-10 md:h-10 text-[#0062BE]" />
+      title: "Built on Collaboration",
+      description: "The best work happens when ideas flow freely. We work closely with every brand, turning conversations into collaborations and visions into reality.",
+      icon: <VscOrganization className="w-8 h-8 md:w-10 md:h-10 text-[#0062BE]" />
     },
     {
-      title: "Tailored Strategies",
-      description: "We abandon cookie-cutter templates. Every roadmap is uniquely architected around your brand and your specific audience.",
-      icon: <VscLayout className="w-8 h-8 md:w-10 md:h-10 text-[#10B981]" />
-    },
-    {
-      title: "Full-Funnel Expertise",
-      description: "From initial awareness to final conversion, we expertly manage the entire customer journey under one unified roof.",
-      icon: <VscFilter className="w-8 h-8 md:w-10 md:h-10 text-[#F27224]" />
+      title: "Every Frame Has a Purpose",
+      description: "Every design, every visual, and every campaign is crafted intentionally—because details are what make stories unforgettable.",
+      icon: <VscChecklist className="w-8 h-8 md:w-10 md:h-10 text-[#10B981]" />
     }
   ];
 
@@ -61,11 +71,17 @@ export default function WhyWeExist() {
           }`}
         >
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#F27224] mb-4">
-            Why Brands Choose Us
+            The TeaNema Difference
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold font-display text-[#3E2723] tracking-tight mb-16 md:mb-24">
-            Why People Stick Around
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold font-display text-[#3E2723] tracking-tight mb-8">
+            Where Bold Ideas Are Brewed & Stories Come Alive.
           </h2>
+          
+          <div className="flex flex-col gap-6 text-lg md:text-xl text-slate-600 leading-relaxed font-medium mb-16 md:mb-24">
+            <p>Every brand has a story waiting to be told. At TeaNema, we believe the best stories aren't created by following trends—they're crafted through meaningful ideas, thoughtful strategy, and cinematic execution.</p>
+            <p>Inspired by the warmth of a shared cup of tea and the timeless art of storytelling, we transform brands into experiences that people don't just see—they remember. From building distinctive identities and producing compelling visual content to executing performance-driven campaigns, every step is designed with purpose and precision.</p>
+            <p>We don't believe in one-size-fits-all solutions. Every collaboration begins with understanding your vision, your audience, and your journey—because every brand deserves a story that's uniquely its own.</p>
+          </div>
           
           <div className="flex flex-col gap-12 md:gap-16">
             {features.map((feature, index) => (

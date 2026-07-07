@@ -207,7 +207,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pb-8 text-xs text-slate-400">
-          <p>© 2026 TEANEMA. All rights reserved.</p>
+          <p>© 2026 TEANEMA. All rights reserved. | Managed by SBS Quantum</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-slate-700 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-slate-700 transition-colors">Terms of Service</a>
